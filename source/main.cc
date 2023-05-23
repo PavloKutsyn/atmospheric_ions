@@ -8,10 +8,9 @@
 #include "RunAction.hh"
 #include "EventAction.hh"
 
-
 int main (int argc,char** argv)
 {
-    // Setting randomizer
+    // Create and set the random number generation engine
     CLHEP::RanecuEngine * engine = new CLHEP::RanecuEngine();
     G4Random::setTheEngine(engine);
 
@@ -19,36 +18,36 @@ int main (int argc,char** argv)
     G4RunManager* theRunManager = new G4RunManager;
 
     // Set the mandatory initialization classes
-    theRunManager->SetUserInitialization(new DetectorConstruction());
-    G4VModularPhysicsList* physicsList = new QGSP_BERT;
-    theRunManager->SetUserInitialization(physicsList);
-    theRunManager->SetUserAction(new PrimaryGeneratorAction(""));
-    theRunManager->Initialize();
+    theRunManager->SetUserInitialization(new DetectorConstruction());  // Construct the geometry
+    G4VModularPhysicsList* physicsList = new QGSP_BERT;  // Use the QGSP_BERT physics list
+    theRunManager->SetUserInitialization(physicsList);  // Set the physics list
+    theRunManager->SetUserAction(new PrimaryGeneratorAction(""));  // Set the primary particle generation
+    theRunManager->Initialize();  // Initialize the run manager
 
-    RunAction* runAction = new RunAction;
-    theRunManager->SetUserAction(runAction);
-    EventAction* eventAction = new EventAction();
-    theRunManager->SetUserAction(eventAction);
+    RunAction* runAction = new RunAction;  // Create a new run action
+    theRunManager->SetUserAction(runAction);  // Set the run action
+    EventAction* eventAction = new EventAction();  // Create a new event action
+    theRunManager->SetUserAction(eventAction);  // Set the event action
 
-    // Start the visualization driver
+    // Create the visualization manager and initialize it
     auto visManager = new G4VisExecutive;
     visManager->Initialize();
 
-    // Process macro or start UI session
+    // Get a pointer to the UI manager
     G4UImanager* UImanager = G4UImanager::GetUIpointer();
-    if ( argc == 1 ) {
+    if ( argc == 1 ) {  // If no command line arguments, start an interactive session
         G4UIExecutive* ui = new G4UIExecutive(argc, argv);
-        UImanager->ApplyCommand("/control/execute vis.mac");
-        ui->SessionStart();
+        UImanager->ApplyCommand("/control/execute vis.mac");  // Execute the vis.mac macro
+        ui->SessionStart();  // Start the UI session
         delete ui;
     }
-    else {
+    else {  // If command line arguments are provided, execute a macro
         G4String command = "/control/execute ";
         G4String fileName = argv[1];
-        UImanager->ApplyCommand(command+fileName);
+        UImanager->ApplyCommand(command+fileName);  // Execute the macro
     }
 
-    delete visManager;
-    delete theRunManager;
+    delete visManager;  // Delete the visualization manager
+    delete theRunManager;  // Delete the run manager
     return 0;
 }

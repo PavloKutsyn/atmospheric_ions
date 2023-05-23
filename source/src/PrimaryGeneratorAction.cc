@@ -76,7 +76,7 @@ PrimaryGeneratorAction::~PrimaryGeneratorAction()
 {
 }
 
-//void ALARAPrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
+
 void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 {
   if (InputState != 0) {

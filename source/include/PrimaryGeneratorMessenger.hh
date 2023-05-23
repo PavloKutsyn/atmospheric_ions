@@ -19,12 +19,12 @@ class PrimaryGeneratorMessenger: public G4UImessenger
     void SetNewValue(G4UIcommand*, G4String);
     
   private:
-    PrimaryGeneratorAction*      Action;
-    G4UIdirectory*               CRYDir;
-    G4UIcmdWithAString*          FileCmd; 
-    G4UIcmdWithAString*          InputCmd;
-    G4UIcmdWithoutParameter*     UpdateCmd;
-    std::string* MessInput;
+    PrimaryGeneratorAction*      Action; //an indicator of the action of the primary generator, which controls the actual generation of particles.
+    G4UIdirectory*               CRYDir; //a pointer to the directory where the commands for the CRY generator are located.
+    G4UIcmdWithAString*          FileCmd; //the command to enter the name of the file with CRY settings.
+    G4UIcmdWithAString*          InputCmd; //a command to enter CRY parameters directly through the command line.
+    G4UIcmdWithoutParameter*     UpdateCmd; //command to update CRY parameters.
+    std::string* MessInput;                 //a pointer to a row that stores the entered parameters until they are updated.
 };
 
 

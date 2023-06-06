@@ -1,9 +1,0 @@
-<map id="Json::OurReader::decodeString" name="Json::OurReader::decodeString">
-<area shape="rect" id="node1" title=" " alt="" coords="5,97,224,123"/>
-<area shape="rect" id="node2" href="$classJson_1_1OurReader.html#a2acd5b1d53e7d7e17c21ff8e96edc09d" title=" " alt="" coords="279,5,459,47"/>
-<area shape="rect" id="node3" href="$classJson_1_1Value.html#ac6d858b5fd4d5fe6ca84f697def8c5ea" title=" " alt="" coords="272,71,465,98"/>
-<area shape="rect" id="node4" href="$classJson_1_1Value.html#a6d741407c3d784360c200f181b0d6d64" title=" " alt="" coords="273,122,464,149"/>
-<area shape="rect" id="node5" href="$classJson_1_1Value.html#a5263476047f20e2fc6de470e4de34fe5" title="Swap values but leave comments and source offsets in place." alt="" coords="275,173,462,199"/>
-<area shape="rect" id="node6" href="$namespacestd.html#a22cc6fcbbb1f2f705c7888b615e43582" title="Specialize std::swap() for Json::Value." alt="" coords="513,147,597,174"/>
-<area shape="rect" id="node7" href="$classJson_1_1Value.html#aab841120d78e296e1bc06a373345e822" title="Swap everything." alt="" coords="645,147,780,174"/>
-</map>

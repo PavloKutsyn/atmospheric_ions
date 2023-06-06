@@ -1,0 +1,151 @@
+\hypertarget{classBinaryReactionProcess}{}\doxysection{Binary\+Reaction\+Process Class Reference}
+\label{classBinaryReactionProcess}\index{BinaryReactionProcess@{BinaryReactionProcess}}
+
+
+{\ttfamily \#include $<$Binary\+Reaction\+Process.\+hh$>$}
+
+
+
+Inheritance diagram for Binary\+Reaction\+Process\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{classBinaryReactionProcess__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Binary\+Reaction\+Process\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{classBinaryReactionProcess__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBinaryReactionProcess_a49b247095f3c03b37ce928c1afeb81ce}{Binary\+Reaction\+Process}} (const G4\+String \&name=\char`\"{}Binary\+Reaction\char`\"{})
+\item 
+\mbox{\hyperlink{classBinaryReactionProcess_a1b2d96bba512636e8f9bd70f69cdc9b8}{$\sim$\+Binary\+Reaction\+Process}} ()
+\item 
+G4double \mbox{\hyperlink{classBinaryReactionProcess_a879b9440224b4f8de302a87f6b605078}{Get\+Mean\+Free\+Path}} (const G4\+Track \&, G4double, G4\+Force\+Condition $\ast$)
+\item 
+G4\+VParticle\+Change $\ast$ \mbox{\hyperlink{classBinaryReactionProcess_a37de3f34062c58fec4bf5d2bdfb1886d}{Post\+Step\+Do\+It}} (const G4\+Track \&, const G4\+Step \&)
+\item 
+G4\+VParticle\+Change $\ast$ \mbox{\hyperlink{classBinaryReactionProcess_a7933c691a52ea3ca99a314d85ece6708}{Decay}} (const G4\+Track \&, G4int, G4int, G4int, G4int)
+\item 
+void \mbox{\hyperlink{classBinaryReactionProcess_a01b7a1d9e741f2a646288c2f9909b887}{Start\+Tracking}} (G4\+Track $\ast$)
+\item 
+void \mbox{\hyperlink{classBinaryReactionProcess_a8c937e5c9c1ffd17484ef161fa7074c5}{Set\+Num\+Grids}} (G4int num\+Grids)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+G4double \mbox{\hyperlink{classBinaryReactionProcess_a108332af14d879878f7732549debd97c}{f\+Scattering\+Energy}}
+\item 
+G4int \mbox{\hyperlink{classBinaryReactionProcess_a2a82c42e1df7a1e7884a09b5ae7d6797}{f\+Num\+Grids}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBinaryReactionProcess_a49b247095f3c03b37ce928c1afeb81ce}\label{classBinaryReactionProcess_a49b247095f3c03b37ce928c1afeb81ce}} 
+\index{BinaryReactionProcess@{BinaryReactionProcess}!BinaryReactionProcess@{BinaryReactionProcess}}
+\index{BinaryReactionProcess@{BinaryReactionProcess}!BinaryReactionProcess@{BinaryReactionProcess}}
+\doxysubsubsection{\texorpdfstring{BinaryReactionProcess()}{BinaryReactionProcess()}}
+{\footnotesize\ttfamily Binary\+Reaction\+Process\+::\+Binary\+Reaction\+Process (\begin{DoxyParamCaption}\item[{const G4\+String \&}]{name = {\ttfamily \char`\"{}BinaryReaction\char`\"{}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classBinaryReactionProcess_a1b2d96bba512636e8f9bd70f69cdc9b8}\label{classBinaryReactionProcess_a1b2d96bba512636e8f9bd70f69cdc9b8}} 
+\index{BinaryReactionProcess@{BinaryReactionProcess}!````~BinaryReactionProcess@{$\sim$BinaryReactionProcess}}
+\index{````~BinaryReactionProcess@{$\sim$BinaryReactionProcess}!BinaryReactionProcess@{BinaryReactionProcess}}
+\doxysubsubsection{\texorpdfstring{$\sim$BinaryReactionProcess()}{~BinaryReactionProcess()}}
+{\footnotesize\ttfamily Binary\+Reaction\+Process\+::$\sim$\+Binary\+Reaction\+Process (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBinaryReactionProcess_a7933c691a52ea3ca99a314d85ece6708}\label{classBinaryReactionProcess_a7933c691a52ea3ca99a314d85ece6708}} 
+\index{BinaryReactionProcess@{BinaryReactionProcess}!Decay@{Decay}}
+\index{Decay@{Decay}!BinaryReactionProcess@{BinaryReactionProcess}}
+\doxysubsubsection{\texorpdfstring{Decay()}{Decay()}}
+{\footnotesize\ttfamily G4\+VParticle\+Change $\ast$ Binary\+Reaction\+Process\+::\+Decay (\begin{DoxyParamCaption}\item[{const G4\+Track \&}]{a\+Track,  }\item[{G4int}]{light\+Charge,  }\item[{G4int}]{light\+Mass,  }\item[{G4int}]{heavy\+Charge,  }\item[{G4int}]{heavy\+Mass }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBinaryReactionProcess_a7933c691a52ea3ca99a314d85ece6708_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classBinaryReactionProcess_a879b9440224b4f8de302a87f6b605078}\label{classBinaryReactionProcess_a879b9440224b4f8de302a87f6b605078}} 
+\index{BinaryReactionProcess@{BinaryReactionProcess}!GetMeanFreePath@{GetMeanFreePath}}
+\index{GetMeanFreePath@{GetMeanFreePath}!BinaryReactionProcess@{BinaryReactionProcess}}
+\doxysubsubsection{\texorpdfstring{GetMeanFreePath()}{GetMeanFreePath()}}
+{\footnotesize\ttfamily G4double Binary\+Reaction\+Process\+::\+Get\+Mean\+Free\+Path (\begin{DoxyParamCaption}\item[{const G4\+Track \&}]{a\+Track,  }\item[{G4double}]{,  }\item[{G4\+Force\+Condition $\ast$}]{condition }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBinaryReactionProcess_a879b9440224b4f8de302a87f6b605078_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classBinaryReactionProcess_a37de3f34062c58fec4bf5d2bdfb1886d}\label{classBinaryReactionProcess_a37de3f34062c58fec4bf5d2bdfb1886d}} 
+\index{BinaryReactionProcess@{BinaryReactionProcess}!PostStepDoIt@{PostStepDoIt}}
+\index{PostStepDoIt@{PostStepDoIt}!BinaryReactionProcess@{BinaryReactionProcess}}
+\doxysubsubsection{\texorpdfstring{PostStepDoIt()}{PostStepDoIt()}}
+{\footnotesize\ttfamily G4\+VParticle\+Change $\ast$ Binary\+Reaction\+Process\+::\+Post\+Step\+Do\+It (\begin{DoxyParamCaption}\item[{const G4\+Track \&}]{a\+Track,  }\item[{const G4\+Step \&}]{a\+Step }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBinaryReactionProcess_a37de3f34062c58fec4bf5d2bdfb1886d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classBinaryReactionProcess_a8c937e5c9c1ffd17484ef161fa7074c5}\label{classBinaryReactionProcess_a8c937e5c9c1ffd17484ef161fa7074c5}} 
+\index{BinaryReactionProcess@{BinaryReactionProcess}!SetNumGrids@{SetNumGrids}}
+\index{SetNumGrids@{SetNumGrids}!BinaryReactionProcess@{BinaryReactionProcess}}
+\doxysubsubsection{\texorpdfstring{SetNumGrids()}{SetNumGrids()}}
+{\footnotesize\ttfamily void Binary\+Reaction\+Process\+::\+Set\+Num\+Grids (\begin{DoxyParamCaption}\item[{G4int}]{num\+Grids }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBinaryReactionProcess_a8c937e5c9c1ffd17484ef161fa7074c5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classBinaryReactionProcess_a01b7a1d9e741f2a646288c2f9909b887}\label{classBinaryReactionProcess_a01b7a1d9e741f2a646288c2f9909b887}} 
+\index{BinaryReactionProcess@{BinaryReactionProcess}!StartTracking@{StartTracking}}
+\index{StartTracking@{StartTracking}!BinaryReactionProcess@{BinaryReactionProcess}}
+\doxysubsubsection{\texorpdfstring{StartTracking()}{StartTracking()}}
+{\footnotesize\ttfamily void Binary\+Reaction\+Process\+::\+Start\+Tracking (\begin{DoxyParamCaption}\item[{G4\+Track $\ast$}]{track }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classBinaryReactionProcess_a2a82c42e1df7a1e7884a09b5ae7d6797}\label{classBinaryReactionProcess_a2a82c42e1df7a1e7884a09b5ae7d6797}} 
+\index{BinaryReactionProcess@{BinaryReactionProcess}!fNumGrids@{fNumGrids}}
+\index{fNumGrids@{fNumGrids}!BinaryReactionProcess@{BinaryReactionProcess}}
+\doxysubsubsection{\texorpdfstring{fNumGrids}{fNumGrids}}
+{\footnotesize\ttfamily G4int Binary\+Reaction\+Process\+::f\+Num\+Grids\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBinaryReactionProcess_a108332af14d879878f7732549debd97c}\label{classBinaryReactionProcess_a108332af14d879878f7732549debd97c}} 
+\index{BinaryReactionProcess@{BinaryReactionProcess}!fScatteringEnergy@{fScatteringEnergy}}
+\index{fScatteringEnergy@{fScatteringEnergy}!BinaryReactionProcess@{BinaryReactionProcess}}
+\doxysubsubsection{\texorpdfstring{fScatteringEnergy}{fScatteringEnergy}}
+{\footnotesize\ttfamily G4double Binary\+Reaction\+Process\+::f\+Scattering\+Energy\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sourse/include/\mbox{\hyperlink{BinaryReactionProcess_8hh}{Binary\+Reaction\+Process.\+hh}}\item 
+sourse/src/\mbox{\hyperlink{BinaryReactionProcess_8cc}{Binary\+Reaction\+Process.\+cc}}\end{DoxyCompactItemize}

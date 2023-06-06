@@ -1,0 +1,119 @@
+\hypertarget{classMMRunAction}{}\doxysection{MMRun\+Action Class Reference}
+\label{classMMRunAction}\index{MMRunAction@{MMRunAction}}
+
+
+{\ttfamily \#include $<$MMRun\+Action.\+hh$>$}
+
+
+
+Inheritance diagram for MMRun\+Action\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classMMRunAction__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for MMRun\+Action\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMMRunAction__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMMRunAction_a297eaa7a8dedf289201a9112098bd1c3}{MMRun\+Action}} (\mbox{\hyperlink{classMMDetectorConstruction}{MMDetector\+Construction}} $\ast$, \mbox{\hyperlink{classMMPrimaryGeneratorAction}{MMPrimary\+Generator\+Action}} $\ast$)
+\item 
+\mbox{\hyperlink{classMMRunAction_a781aeecd187278dfbc43c9c9e25d0c4a}{$\sim$\+MMRun\+Action}} ()
+\item 
+virtual G4\+Run $\ast$ \mbox{\hyperlink{classMMRunAction_a1088e30cd54bcdbd3c6424cb831cac22}{Generate\+Run}} ()
+\item 
+void \mbox{\hyperlink{classMMRunAction_a9d5d5b556c663e258a083145fa8d0e72}{Begin\+Of\+Run\+Action}} (const G4\+Run $\ast$)
+\item 
+void \mbox{\hyperlink{classMMRunAction_a5dd6f377f9196cc72367c5fade6f4513}{End\+Of\+Run\+Action}} (const G4\+Run $\ast$)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMMDetectorConstruction}{MMDetector\+Construction}} $\ast$ \mbox{\hyperlink{classMMRunAction_a5342bec53196d5d07dcadf1deb7f91c9}{f\+Detector}}
+\item 
+\mbox{\hyperlink{classMMPrimaryGeneratorAction}{MMPrimary\+Generator\+Action}} $\ast$ \mbox{\hyperlink{classMMRunAction_aa4b33142e30a05623e35cf44d077274b}{f\+Primary}}
+\item 
+std\+::vector$<$ G4double $>$ \mbox{\hyperlink{classMMRunAction_a7599025209162ba3581b4ee3ab298309}{f\+Grid\+Energy}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMMRunAction_a297eaa7a8dedf289201a9112098bd1c3}\label{classMMRunAction_a297eaa7a8dedf289201a9112098bd1c3}} 
+\index{MMRunAction@{MMRunAction}!MMRunAction@{MMRunAction}}
+\index{MMRunAction@{MMRunAction}!MMRunAction@{MMRunAction}}
+\doxysubsubsection{\texorpdfstring{MMRunAction()}{MMRunAction()}}
+{\footnotesize\ttfamily MMRun\+Action\+::\+MMRun\+Action (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMMDetectorConstruction}{MMDetector\+Construction}} $\ast$}]{detector,  }\item[{\mbox{\hyperlink{classMMPrimaryGeneratorAction}{MMPrimary\+Generator\+Action}} $\ast$}]{primary }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMMRunAction_a781aeecd187278dfbc43c9c9e25d0c4a}\label{classMMRunAction_a781aeecd187278dfbc43c9c9e25d0c4a}} 
+\index{MMRunAction@{MMRunAction}!````~MMRunAction@{$\sim$MMRunAction}}
+\index{````~MMRunAction@{$\sim$MMRunAction}!MMRunAction@{MMRunAction}}
+\doxysubsubsection{\texorpdfstring{$\sim$MMRunAction()}{~MMRunAction()}}
+{\footnotesize\ttfamily MMRun\+Action\+::$\sim$\+MMRun\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMMRunAction_a9d5d5b556c663e258a083145fa8d0e72}\label{classMMRunAction_a9d5d5b556c663e258a083145fa8d0e72}} 
+\index{MMRunAction@{MMRunAction}!BeginOfRunAction@{BeginOfRunAction}}
+\index{BeginOfRunAction@{BeginOfRunAction}!MMRunAction@{MMRunAction}}
+\doxysubsubsection{\texorpdfstring{BeginOfRunAction()}{BeginOfRunAction()}}
+{\footnotesize\ttfamily void MMRun\+Action\+::\+Begin\+Of\+Run\+Action (\begin{DoxyParamCaption}\item[{const G4\+Run $\ast$}]{run }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMMRunAction_a9d5d5b556c663e258a083145fa8d0e72_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classMMRunAction_a5dd6f377f9196cc72367c5fade6f4513}\label{classMMRunAction_a5dd6f377f9196cc72367c5fade6f4513}} 
+\index{MMRunAction@{MMRunAction}!EndOfRunAction@{EndOfRunAction}}
+\index{EndOfRunAction@{EndOfRunAction}!MMRunAction@{MMRunAction}}
+\doxysubsubsection{\texorpdfstring{EndOfRunAction()}{EndOfRunAction()}}
+{\footnotesize\ttfamily void MMRun\+Action\+::\+End\+Of\+Run\+Action (\begin{DoxyParamCaption}\item[{const G4\+Run $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMMRunAction_a1088e30cd54bcdbd3c6424cb831cac22}\label{classMMRunAction_a1088e30cd54bcdbd3c6424cb831cac22}} 
+\index{MMRunAction@{MMRunAction}!GenerateRun@{GenerateRun}}
+\index{GenerateRun@{GenerateRun}!MMRunAction@{MMRunAction}}
+\doxysubsubsection{\texorpdfstring{GenerateRun()}{GenerateRun()}}
+{\footnotesize\ttfamily G4\+Run $\ast$ MMRun\+Action\+::\+Generate\+Run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classMMRunAction_a5342bec53196d5d07dcadf1deb7f91c9}\label{classMMRunAction_a5342bec53196d5d07dcadf1deb7f91c9}} 
+\index{MMRunAction@{MMRunAction}!fDetector@{fDetector}}
+\index{fDetector@{fDetector}!MMRunAction@{MMRunAction}}
+\doxysubsubsection{\texorpdfstring{fDetector}{fDetector}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMMDetectorConstruction}{MMDetector\+Construction}}$\ast$ MMRun\+Action\+::f\+Detector\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMMRunAction_a7599025209162ba3581b4ee3ab298309}\label{classMMRunAction_a7599025209162ba3581b4ee3ab298309}} 
+\index{MMRunAction@{MMRunAction}!fGridEnergy@{fGridEnergy}}
+\index{fGridEnergy@{fGridEnergy}!MMRunAction@{MMRunAction}}
+\doxysubsubsection{\texorpdfstring{fGridEnergy}{fGridEnergy}}
+{\footnotesize\ttfamily std\+::vector$<$G4double$>$ MMRun\+Action\+::f\+Grid\+Energy\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMMRunAction_aa4b33142e30a05623e35cf44d077274b}\label{classMMRunAction_aa4b33142e30a05623e35cf44d077274b}} 
+\index{MMRunAction@{MMRunAction}!fPrimary@{fPrimary}}
+\index{fPrimary@{fPrimary}!MMRunAction@{MMRunAction}}
+\doxysubsubsection{\texorpdfstring{fPrimary}{fPrimary}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMMPrimaryGeneratorAction}{MMPrimary\+Generator\+Action}}$\ast$ MMRun\+Action\+::f\+Primary\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sourse/include/\mbox{\hyperlink{MMRunAction_8hh}{MMRun\+Action.\+hh}}\item 
+sourse/src/\mbox{\hyperlink{MMRunAction_8cc}{MMRun\+Action.\+cc}}\end{DoxyCompactItemize}

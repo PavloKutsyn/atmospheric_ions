@@ -1,0 +1,185 @@
+\hypertarget{classJson_1_1FastWriter}{}\doxysection{Json\+::Fast\+Writer Class Reference}
+\label{classJson_1_1FastWriter}\index{Json::FastWriter@{Json::FastWriter}}
+
+
+Outputs a \mbox{\hyperlink{classJson_1_1Value}{Value}} in \href{http://www.json.org}{\texttt{ JSON}} format without formatting (not human friendly).  
+
+
+
+
+{\ttfamily \#include $<$json.\+h$>$}
+
+
+
+Inheritance diagram for Json\+::Fast\+Writer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{classJson_1_1FastWriter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Json\+::Fast\+Writer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{classJson_1_1FastWriter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classJson_1_1FastWriter_a1bbc73ce1a1cc7b09cd1e02db3905170}{Fast\+Writer}} ()
+\item 
+virtual \mbox{\hyperlink{classJson_1_1FastWriter_a7eb61405d041a915e5e980be97a707aa}{$\sim$\+Fast\+Writer}} ()
+\item 
+void \mbox{\hyperlink{classJson_1_1FastWriter_a78d98e9f76d33660ad6e6a1abe287d45}{enable\+YAMLCompatibility}} ()
+\item 
+void \mbox{\hyperlink{classJson_1_1FastWriter_a6e93d8dce951e408517311026a065b40}{drop\+Null\+Placeholders}} ()
+\begin{DoxyCompactList}\small\item\em Drop the \char`\"{}null\char`\"{} string from the writer\textquotesingle{}s output for null\+Values. Strictly speaking, this is not valid JSON. But when the output is being fed to a browser\textquotesingle{}s Javascript, it makes for smaller output and the browser can handle the output just fine. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classJson_1_1FastWriter_af4ee077d365d75941fb2688d97207a55}{omit\+Ending\+Line\+Feed}} ()
+\item 
+virtual std\+::string \mbox{\hyperlink{classJson_1_1FastWriter_aa66218a56447222f91d64db618935a19}{write}} (const \mbox{\hyperlink{classJson_1_1Value}{Value}} \&root)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classJson_1_1FastWriter_a2ef4a2ce13a341171f01f414f4fdd765}{write\+Value}} (const \mbox{\hyperlink{classJson_1_1Value}{Value}} \&value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classJson_1_1FastWriter_afc70d465b79bfc7741ff75294dcefeab}{document\+\_\+}}
+\item 
+bool \mbox{\hyperlink{classJson_1_1FastWriter_a4c4c1911179bf472d24492915b0e489a}{yaml\+Compatiblity\+Enabled\+\_\+}}
+\item 
+bool \mbox{\hyperlink{classJson_1_1FastWriter_a97e9d4ff84b59a48756dcc27a71b5904}{drop\+Null\+Placeholders\+\_\+}}
+\item 
+bool \mbox{\hyperlink{classJson_1_1FastWriter_abd6e13851db6dcf59d84af68d48d50ac}{omit\+Ending\+Line\+Feed\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Outputs a \mbox{\hyperlink{classJson_1_1Value}{Value}} in \href{http://www.json.org}{\texttt{ JSON}} format without formatting (not human friendly). 
+
+The JSON document is written in a single line. It is not intended for \textquotesingle{}human\textquotesingle{} consumption, but may be usefull to support feature such as RPC where bandwith is limited. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classJson_1_1Reader}{Reader}}, \mbox{\hyperlink{classJson_1_1Value}{Value}} 
+\end{DoxySeeAlso}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000008}{Deprecated}}]Use \mbox{\hyperlink{classJson_1_1StreamWriterBuilder}{Stream\+Writer\+Builder}}. \end{DoxyRefDesc}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classJson_1_1FastWriter_a1bbc73ce1a1cc7b09cd1e02db3905170}\label{classJson_1_1FastWriter_a1bbc73ce1a1cc7b09cd1e02db3905170}} 
+\index{Json::FastWriter@{Json::FastWriter}!FastWriter@{FastWriter}}
+\index{FastWriter@{FastWriter}!Json::FastWriter@{Json::FastWriter}}
+\doxysubsubsection{\texorpdfstring{FastWriter()}{FastWriter()}}
+{\footnotesize\ttfamily Json\+::\+Fast\+Writer\+::\+Fast\+Writer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classJson_1_1FastWriter_a7eb61405d041a915e5e980be97a707aa}\label{classJson_1_1FastWriter_a7eb61405d041a915e5e980be97a707aa}} 
+\index{Json::FastWriter@{Json::FastWriter}!````~FastWriter@{$\sim$FastWriter}}
+\index{````~FastWriter@{$\sim$FastWriter}!Json::FastWriter@{Json::FastWriter}}
+\doxysubsubsection{\texorpdfstring{$\sim$FastWriter()}{~FastWriter()}}
+{\footnotesize\ttfamily virtual Json\+::\+Fast\+Writer\+::$\sim$\+Fast\+Writer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classJson_1_1FastWriter_a6e93d8dce951e408517311026a065b40}\label{classJson_1_1FastWriter_a6e93d8dce951e408517311026a065b40}} 
+\index{Json::FastWriter@{Json::FastWriter}!dropNullPlaceholders@{dropNullPlaceholders}}
+\index{dropNullPlaceholders@{dropNullPlaceholders}!Json::FastWriter@{Json::FastWriter}}
+\doxysubsubsection{\texorpdfstring{dropNullPlaceholders()}{dropNullPlaceholders()}}
+{\footnotesize\ttfamily void Json\+::\+Fast\+Writer\+::drop\+Null\+Placeholders (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Drop the \char`\"{}null\char`\"{} string from the writer\textquotesingle{}s output for null\+Values. Strictly speaking, this is not valid JSON. But when the output is being fed to a browser\textquotesingle{}s Javascript, it makes for smaller output and the browser can handle the output just fine. 
+
+\mbox{\Hypertarget{classJson_1_1FastWriter_a78d98e9f76d33660ad6e6a1abe287d45}\label{classJson_1_1FastWriter_a78d98e9f76d33660ad6e6a1abe287d45}} 
+\index{Json::FastWriter@{Json::FastWriter}!enableYAMLCompatibility@{enableYAMLCompatibility}}
+\index{enableYAMLCompatibility@{enableYAMLCompatibility}!Json::FastWriter@{Json::FastWriter}}
+\doxysubsubsection{\texorpdfstring{enableYAMLCompatibility()}{enableYAMLCompatibility()}}
+{\footnotesize\ttfamily void Json\+::\+Fast\+Writer\+::enable\+YAMLCompatibility (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classJson_1_1FastWriter_af4ee077d365d75941fb2688d97207a55}\label{classJson_1_1FastWriter_af4ee077d365d75941fb2688d97207a55}} 
+\index{Json::FastWriter@{Json::FastWriter}!omitEndingLineFeed@{omitEndingLineFeed}}
+\index{omitEndingLineFeed@{omitEndingLineFeed}!Json::FastWriter@{Json::FastWriter}}
+\doxysubsubsection{\texorpdfstring{omitEndingLineFeed()}{omitEndingLineFeed()}}
+{\footnotesize\ttfamily void Json\+::\+Fast\+Writer\+::omit\+Ending\+Line\+Feed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classJson_1_1FastWriter_aa66218a56447222f91d64db618935a19}\label{classJson_1_1FastWriter_aa66218a56447222f91d64db618935a19}} 
+\index{Json::FastWriter@{Json::FastWriter}!write@{write}}
+\index{write@{write}!Json::FastWriter@{Json::FastWriter}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily std\+::string Json\+::\+Fast\+Writer\+::write (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classJson_1_1Value}{Value}} \&}]{root }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classJson_1_1Writer_a7b2273a4ffd6f32b369ac8a53b7b5a0d}{Json\+::\+Writer}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJson_1_1FastWriter_aa66218a56447222f91d64db618935a19_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classJson_1_1FastWriter_a2ef4a2ce13a341171f01f414f4fdd765}\label{classJson_1_1FastWriter_a2ef4a2ce13a341171f01f414f4fdd765}} 
+\index{Json::FastWriter@{Json::FastWriter}!writeValue@{writeValue}}
+\index{writeValue@{writeValue}!Json::FastWriter@{Json::FastWriter}}
+\doxysubsubsection{\texorpdfstring{writeValue()}{writeValue()}}
+{\footnotesize\ttfamily void Json\+::\+Fast\+Writer\+::write\+Value (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classJson_1_1Value}{Value}} \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJson_1_1FastWriter_a2ef4a2ce13a341171f01f414f4fdd765_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJson_1_1FastWriter_a2ef4a2ce13a341171f01f414f4fdd765_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classJson_1_1FastWriter_afc70d465b79bfc7741ff75294dcefeab}\label{classJson_1_1FastWriter_afc70d465b79bfc7741ff75294dcefeab}} 
+\index{Json::FastWriter@{Json::FastWriter}!document\_@{document\_}}
+\index{document\_@{document\_}!Json::FastWriter@{Json::FastWriter}}
+\doxysubsubsection{\texorpdfstring{document\_}{document\_}}
+{\footnotesize\ttfamily std\+::string Json\+::\+Fast\+Writer\+::document\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classJson_1_1FastWriter_a97e9d4ff84b59a48756dcc27a71b5904}\label{classJson_1_1FastWriter_a97e9d4ff84b59a48756dcc27a71b5904}} 
+\index{Json::FastWriter@{Json::FastWriter}!dropNullPlaceholders\_@{dropNullPlaceholders\_}}
+\index{dropNullPlaceholders\_@{dropNullPlaceholders\_}!Json::FastWriter@{Json::FastWriter}}
+\doxysubsubsection{\texorpdfstring{dropNullPlaceholders\_}{dropNullPlaceholders\_}}
+{\footnotesize\ttfamily bool Json\+::\+Fast\+Writer\+::drop\+Null\+Placeholders\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classJson_1_1FastWriter_abd6e13851db6dcf59d84af68d48d50ac}\label{classJson_1_1FastWriter_abd6e13851db6dcf59d84af68d48d50ac}} 
+\index{Json::FastWriter@{Json::FastWriter}!omitEndingLineFeed\_@{omitEndingLineFeed\_}}
+\index{omitEndingLineFeed\_@{omitEndingLineFeed\_}!Json::FastWriter@{Json::FastWriter}}
+\doxysubsubsection{\texorpdfstring{omitEndingLineFeed\_}{omitEndingLineFeed\_}}
+{\footnotesize\ttfamily bool Json\+::\+Fast\+Writer\+::omit\+Ending\+Line\+Feed\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classJson_1_1FastWriter_a4c4c1911179bf472d24492915b0e489a}\label{classJson_1_1FastWriter_a4c4c1911179bf472d24492915b0e489a}} 
+\index{Json::FastWriter@{Json::FastWriter}!yamlCompatiblityEnabled\_@{yamlCompatiblityEnabled\_}}
+\index{yamlCompatiblityEnabled\_@{yamlCompatiblityEnabled\_}!Json::FastWriter@{Json::FastWriter}}
+\doxysubsubsection{\texorpdfstring{yamlCompatiblityEnabled\_}{yamlCompatiblityEnabled\_}}
+{\footnotesize\ttfamily bool Json\+::\+Fast\+Writer\+::yaml\+Compatiblity\+Enabled\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sourse/include/json/\mbox{\hyperlink{json_8h}{json.\+h}}\item 
+sourse/src/\mbox{\hyperlink{jsoncpp_8cpp}{jsoncpp.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,443 @@
+\hypertarget{classJson_1_1StyledWriter}{}\doxysection{Json\+::Styled\+Writer Class Reference}
+\label{classJson_1_1StyledWriter}\index{Json::StyledWriter@{Json::StyledWriter}}
+
+
+Writes a \mbox{\hyperlink{classJson_1_1Value}{Value}} in \href{http://www.json.org}{\texttt{ JSON}} format in a human friendly way.  
+
+
+
+
+{\ttfamily \#include $<$json.\+h$>$}
+
+
+
+Inheritance diagram for Json\+::Styled\+Writer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{classJson_1_1StyledWriter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Json\+::Styled\+Writer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{classJson_1_1StyledWriter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classJson_1_1StyledWriter_a1f1b5f922a6a0ef0e56c6dd2f6170192}{Styled\+Writer}} ()
+\item 
+virtual \mbox{\hyperlink{classJson_1_1StyledWriter_a7eb58eabb70c6b80ac1ccec93c0c8602}{$\sim$\+Styled\+Writer}} ()
+\item 
+virtual std\+::string \mbox{\hyperlink{classJson_1_1StyledWriter_a56f0fd80f60272b3f3c85690aae66e7d}{write}} (const \mbox{\hyperlink{classJson_1_1Value}{Value}} \&root)
+\begin{DoxyCompactList}\small\item\em Serialize a \mbox{\hyperlink{classJson_1_1Value}{Value}} in \href{http://www.json.org}{\texttt{ JSON}} format. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classJson_1_1StyledWriter_a0b102abcd4b7e11eb22df63921e097df}{Child\+Values}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classJson_1_1StyledWriter_ac40143cf43f7c4a94d3d0b41e5245069}{write\+Value}} (const \mbox{\hyperlink{classJson_1_1Value}{Value}} \&value)
+\item 
+void \mbox{\hyperlink{classJson_1_1StyledWriter_a0618c23d62965515def15ece1e677f5d}{write\+Array\+Value}} (const \mbox{\hyperlink{classJson_1_1Value}{Value}} \&value)
+\item 
+bool \mbox{\hyperlink{classJson_1_1StyledWriter_aa5dc671edf10b9976f1511da2271ab9d}{is\+Multine\+Array}} (const \mbox{\hyperlink{classJson_1_1Value}{Value}} \&value)
+\item 
+void \mbox{\hyperlink{classJson_1_1StyledWriter_aba120a1ff1b84411b32039188e8fb49f}{push\+Value}} (const std\+::string \&value)
+\item 
+void \mbox{\hyperlink{classJson_1_1StyledWriter_a885f4bfb5701896d60eee6716d2db7e4}{write\+Indent}} ()
+\item 
+void \mbox{\hyperlink{classJson_1_1StyledWriter_a7b3cc9da3cb455ee9b2752307ac21b58}{write\+With\+Indent}} (const std\+::string \&value)
+\item 
+void \mbox{\hyperlink{classJson_1_1StyledWriter_a0b65be6186a7c6638270990265e42b97}{indent}} ()
+\item 
+void \mbox{\hyperlink{classJson_1_1StyledWriter_acee1c9285519b573cfcb00b7e7f5a809}{unindent}} ()
+\item 
+void \mbox{\hyperlink{classJson_1_1StyledWriter_ad3452c48fabf968bf3693549331ec06e}{write\+Comment\+Before\+Value}} (const \mbox{\hyperlink{classJson_1_1Value}{Value}} \&root)
+\item 
+void \mbox{\hyperlink{classJson_1_1StyledWriter_ab12b274c62822fc51ec4617c6be95139}{write\+Comment\+After\+Value\+On\+Same\+Line}} (const \mbox{\hyperlink{classJson_1_1Value}{Value}} \&root)
+\item 
+bool \mbox{\hyperlink{classJson_1_1StyledWriter_a37a806d010f708cb68556f2666f79bdf}{has\+Comment\+For\+Value}} (const \mbox{\hyperlink{classJson_1_1Value}{Value}} \&value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \mbox{\hyperlink{classJson_1_1StyledWriter_ad9444449eecf1581f7d227a0b50ecc4d}{normalize\+EOL}} (const std\+::string \&text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classJson_1_1StyledWriter_a0b102abcd4b7e11eb22df63921e097df}{Child\+Values}} \mbox{\hyperlink{classJson_1_1StyledWriter_a1f905495f0705365af117ec541e29fdf}{child\+Values\+\_\+}}
+\item 
+std\+::string \mbox{\hyperlink{classJson_1_1StyledWriter_ac092c93313e7ab202b13e075d682faea}{document\+\_\+}}
+\item 
+std\+::string \mbox{\hyperlink{classJson_1_1StyledWriter_a98a33f1d4c853a4dbf87ca17499c5830}{indent\+String\+\_\+}}
+\item 
+int \mbox{\hyperlink{classJson_1_1StyledWriter_a9c8fc62cb4f3b4a6dbed470fea2aa567}{right\+Margin\+\_\+}}
+\item 
+int \mbox{\hyperlink{classJson_1_1StyledWriter_ae911f06042935286c24a9fb23dba78bd}{indent\+Size\+\_\+}}
+\item 
+bool \mbox{\hyperlink{classJson_1_1StyledWriter_acaabfa48b50a8bb7fa9ce98e2ae971d9}{add\+Child\+Values\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Writes a \mbox{\hyperlink{classJson_1_1Value}{Value}} in \href{http://www.json.org}{\texttt{ JSON}} format in a human friendly way. 
+
+The rules for line break and indent are as follow\+:
+\begin{DoxyItemize}
+\item Object value\+:
+\begin{DoxyItemize}
+\item if empty then print \{\} without indent and line break
+\item if not empty the print \textquotesingle{}\{\textquotesingle{}, line break \& indent, print one value per line and then unindent and line break and print \textquotesingle{}\}\textquotesingle{}.
+\end{DoxyItemize}
+\item Array value\+:
+\begin{DoxyItemize}
+\item if empty then print \mbox{[}\mbox{]} without indent and line break
+\item if the array contains no object value, empty array or some other value types, and all the values fit on one lines, then print the array on a single line.
+\item otherwise, it the values do not fit on one line, or the array contains object or non empty array, then print one value per line.
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+If the \mbox{\hyperlink{classJson_1_1Value}{Value}} have comments then they are outputed according to their \mbox{\hyperlink{namespaceJson_a4fc417c23905b2ae9e2c47d197a45351}{Comment\+Placement}}.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classJson_1_1Reader}{Reader}}, \mbox{\hyperlink{classJson_1_1Value}{Value}}, \mbox{\hyperlink{classJson_1_1Value_a29f3a30f7e5d3af6f38d57999bf5b480}{Value\+::set\+Comment()}} 
+\end{DoxySeeAlso}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000009}{Deprecated}}]Use \mbox{\hyperlink{classJson_1_1StreamWriterBuilder}{Stream\+Writer\+Builder}}. \end{DoxyRefDesc}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classJson_1_1StyledWriter_a0b102abcd4b7e11eb22df63921e097df}\label{classJson_1_1StyledWriter_a0b102abcd4b7e11eb22df63921e097df}} 
+\index{Json::StyledWriter@{Json::StyledWriter}!ChildValues@{ChildValues}}
+\index{ChildValues@{ChildValues}!Json::StyledWriter@{Json::StyledWriter}}
+\doxysubsubsection{\texorpdfstring{ChildValues}{ChildValues}}
+{\footnotesize\ttfamily typedef std\+::vector$<$std\+::string$>$ \mbox{\hyperlink{classJson_1_1StyledWriter_a0b102abcd4b7e11eb22df63921e097df}{Json\+::\+Styled\+Writer\+::\+Child\+Values}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classJson_1_1StyledWriter_a1f1b5f922a6a0ef0e56c6dd2f6170192}\label{classJson_1_1StyledWriter_a1f1b5f922a6a0ef0e56c6dd2f6170192}} 
+\index{Json::StyledWriter@{Json::StyledWriter}!StyledWriter@{StyledWriter}}
+\index{StyledWriter@{StyledWriter}!Json::StyledWriter@{Json::StyledWriter}}
+\doxysubsubsection{\texorpdfstring{StyledWriter()}{StyledWriter()}}
+{\footnotesize\ttfamily Json\+::\+Styled\+Writer\+::\+Styled\+Writer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classJson_1_1StyledWriter_a7eb58eabb70c6b80ac1ccec93c0c8602}\label{classJson_1_1StyledWriter_a7eb58eabb70c6b80ac1ccec93c0c8602}} 
+\index{Json::StyledWriter@{Json::StyledWriter}!````~StyledWriter@{$\sim$StyledWriter}}
+\index{````~StyledWriter@{$\sim$StyledWriter}!Json::StyledWriter@{Json::StyledWriter}}
+\doxysubsubsection{\texorpdfstring{$\sim$StyledWriter()}{~StyledWriter()}}
+{\footnotesize\ttfamily virtual Json\+::\+Styled\+Writer\+::$\sim$\+Styled\+Writer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classJson_1_1StyledWriter_a37a806d010f708cb68556f2666f79bdf}\label{classJson_1_1StyledWriter_a37a806d010f708cb68556f2666f79bdf}} 
+\index{Json::StyledWriter@{Json::StyledWriter}!hasCommentForValue@{hasCommentForValue}}
+\index{hasCommentForValue@{hasCommentForValue}!Json::StyledWriter@{Json::StyledWriter}}
+\doxysubsubsection{\texorpdfstring{hasCommentForValue()}{hasCommentForValue()}}
+{\footnotesize\ttfamily bool Json\+::\+Styled\+Writer\+::has\+Comment\+For\+Value (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classJson_1_1Value}{Value}} \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJson_1_1StyledWriter_a37a806d010f708cb68556f2666f79bdf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJson_1_1StyledWriter_a37a806d010f708cb68556f2666f79bdf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classJson_1_1StyledWriter_a0b65be6186a7c6638270990265e42b97}\label{classJson_1_1StyledWriter_a0b65be6186a7c6638270990265e42b97}} 
+\index{Json::StyledWriter@{Json::StyledWriter}!indent@{indent}}
+\index{indent@{indent}!Json::StyledWriter@{Json::StyledWriter}}
+\doxysubsubsection{\texorpdfstring{indent()}{indent()}}
+{\footnotesize\ttfamily void Json\+::\+Styled\+Writer\+::indent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJson_1_1StyledWriter_a0b65be6186a7c6638270990265e42b97_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classJson_1_1StyledWriter_aa5dc671edf10b9976f1511da2271ab9d}\label{classJson_1_1StyledWriter_aa5dc671edf10b9976f1511da2271ab9d}} 
+\index{Json::StyledWriter@{Json::StyledWriter}!isMultineArray@{isMultineArray}}
+\index{isMultineArray@{isMultineArray}!Json::StyledWriter@{Json::StyledWriter}}
+\doxysubsubsection{\texorpdfstring{isMultineArray()}{isMultineArray()}}
+{\footnotesize\ttfamily bool Json\+::\+Styled\+Writer\+::is\+Multine\+Array (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classJson_1_1Value}{Value}} \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJson_1_1StyledWriter_aa5dc671edf10b9976f1511da2271ab9d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJson_1_1StyledWriter_aa5dc671edf10b9976f1511da2271ab9d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classJson_1_1StyledWriter_ad9444449eecf1581f7d227a0b50ecc4d}\label{classJson_1_1StyledWriter_ad9444449eecf1581f7d227a0b50ecc4d}} 
+\index{Json::StyledWriter@{Json::StyledWriter}!normalizeEOL@{normalizeEOL}}
+\index{normalizeEOL@{normalizeEOL}!Json::StyledWriter@{Json::StyledWriter}}
+\doxysubsubsection{\texorpdfstring{normalizeEOL()}{normalizeEOL()}}
+{\footnotesize\ttfamily static std\+::string Json\+::\+Styled\+Writer\+::normalize\+EOL (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classJson_1_1StyledWriter_aba120a1ff1b84411b32039188e8fb49f}\label{classJson_1_1StyledWriter_aba120a1ff1b84411b32039188e8fb49f}} 
+\index{Json::StyledWriter@{Json::StyledWriter}!pushValue@{pushValue}}
+\index{pushValue@{pushValue}!Json::StyledWriter@{Json::StyledWriter}}
+\doxysubsubsection{\texorpdfstring{pushValue()}{pushValue()}}
+{\footnotesize\ttfamily void Json\+::\+Styled\+Writer\+::push\+Value (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJson_1_1StyledWriter_aba120a1ff1b84411b32039188e8fb49f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classJson_1_1StyledWriter_acee1c9285519b573cfcb00b7e7f5a809}\label{classJson_1_1StyledWriter_acee1c9285519b573cfcb00b7e7f5a809}} 
+\index{Json::StyledWriter@{Json::StyledWriter}!unindent@{unindent}}
+\index{unindent@{unindent}!Json::StyledWriter@{Json::StyledWriter}}
+\doxysubsubsection{\texorpdfstring{unindent()}{unindent()}}
+{\footnotesize\ttfamily void Json\+::\+Styled\+Writer\+::unindent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJson_1_1StyledWriter_acee1c9285519b573cfcb00b7e7f5a809_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classJson_1_1StyledWriter_a56f0fd80f60272b3f3c85690aae66e7d}\label{classJson_1_1StyledWriter_a56f0fd80f60272b3f3c85690aae66e7d}} 
+\index{Json::StyledWriter@{Json::StyledWriter}!write@{write}}
+\index{write@{write}!Json::StyledWriter@{Json::StyledWriter}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily std\+::string Json\+::\+Styled\+Writer\+::write (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classJson_1_1Value}{Value}} \&}]{root }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Serialize a \mbox{\hyperlink{classJson_1_1Value}{Value}} in \href{http://www.json.org}{\texttt{ JSON}} format. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em root} & \mbox{\hyperlink{classJson_1_1Value}{Value}} to serialize. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String containing the JSON document that represents the root value. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classJson_1_1Writer_a7b2273a4ffd6f32b369ac8a53b7b5a0d}{Json\+::\+Writer}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJson_1_1StyledWriter_a56f0fd80f60272b3f3c85690aae66e7d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJson_1_1StyledWriter_a56f0fd80f60272b3f3c85690aae66e7d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classJson_1_1StyledWriter_a0618c23d62965515def15ece1e677f5d}\label{classJson_1_1StyledWriter_a0618c23d62965515def15ece1e677f5d}} 
+\index{Json::StyledWriter@{Json::StyledWriter}!writeArrayValue@{writeArrayValue}}
+\index{writeArrayValue@{writeArrayValue}!Json::StyledWriter@{Json::StyledWriter}}
+\doxysubsubsection{\texorpdfstring{writeArrayValue()}{writeArrayValue()}}
+{\footnotesize\ttfamily void Json\+::\+Styled\+Writer\+::write\+Array\+Value (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classJson_1_1Value}{Value}} \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJson_1_1StyledWriter_a0618c23d62965515def15ece1e677f5d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJson_1_1StyledWriter_a0618c23d62965515def15ece1e677f5d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classJson_1_1StyledWriter_ab12b274c62822fc51ec4617c6be95139}\label{classJson_1_1StyledWriter_ab12b274c62822fc51ec4617c6be95139}} 
+\index{Json::StyledWriter@{Json::StyledWriter}!writeCommentAfterValueOnSameLine@{writeCommentAfterValueOnSameLine}}
+\index{writeCommentAfterValueOnSameLine@{writeCommentAfterValueOnSameLine}!Json::StyledWriter@{Json::StyledWriter}}
+\doxysubsubsection{\texorpdfstring{writeCommentAfterValueOnSameLine()}{writeCommentAfterValueOnSameLine()}}
+{\footnotesize\ttfamily void Json\+::\+Styled\+Writer\+::write\+Comment\+After\+Value\+On\+Same\+Line (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classJson_1_1Value}{Value}} \&}]{root }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJson_1_1StyledWriter_ab12b274c62822fc51ec4617c6be95139_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJson_1_1StyledWriter_ab12b274c62822fc51ec4617c6be95139_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classJson_1_1StyledWriter_ad3452c48fabf968bf3693549331ec06e}\label{classJson_1_1StyledWriter_ad3452c48fabf968bf3693549331ec06e}} 
+\index{Json::StyledWriter@{Json::StyledWriter}!writeCommentBeforeValue@{writeCommentBeforeValue}}
+\index{writeCommentBeforeValue@{writeCommentBeforeValue}!Json::StyledWriter@{Json::StyledWriter}}
+\doxysubsubsection{\texorpdfstring{writeCommentBeforeValue()}{writeCommentBeforeValue()}}
+{\footnotesize\ttfamily void Json\+::\+Styled\+Writer\+::write\+Comment\+Before\+Value (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classJson_1_1Value}{Value}} \&}]{root }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJson_1_1StyledWriter_ad3452c48fabf968bf3693549331ec06e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJson_1_1StyledWriter_ad3452c48fabf968bf3693549331ec06e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classJson_1_1StyledWriter_a885f4bfb5701896d60eee6716d2db7e4}\label{classJson_1_1StyledWriter_a885f4bfb5701896d60eee6716d2db7e4}} 
+\index{Json::StyledWriter@{Json::StyledWriter}!writeIndent@{writeIndent}}
+\index{writeIndent@{writeIndent}!Json::StyledWriter@{Json::StyledWriter}}
+\doxysubsubsection{\texorpdfstring{writeIndent()}{writeIndent()}}
+{\footnotesize\ttfamily void Json\+::\+Styled\+Writer\+::write\+Indent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJson_1_1StyledWriter_a885f4bfb5701896d60eee6716d2db7e4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classJson_1_1StyledWriter_ac40143cf43f7c4a94d3d0b41e5245069}\label{classJson_1_1StyledWriter_ac40143cf43f7c4a94d3d0b41e5245069}} 
+\index{Json::StyledWriter@{Json::StyledWriter}!writeValue@{writeValue}}
+\index{writeValue@{writeValue}!Json::StyledWriter@{Json::StyledWriter}}
+\doxysubsubsection{\texorpdfstring{writeValue()}{writeValue()}}
+{\footnotesize\ttfamily void Json\+::\+Styled\+Writer\+::write\+Value (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classJson_1_1Value}{Value}} \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJson_1_1StyledWriter_ac40143cf43f7c4a94d3d0b41e5245069_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJson_1_1StyledWriter_ac40143cf43f7c4a94d3d0b41e5245069_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classJson_1_1StyledWriter_a7b3cc9da3cb455ee9b2752307ac21b58}\label{classJson_1_1StyledWriter_a7b3cc9da3cb455ee9b2752307ac21b58}} 
+\index{Json::StyledWriter@{Json::StyledWriter}!writeWithIndent@{writeWithIndent}}
+\index{writeWithIndent@{writeWithIndent}!Json::StyledWriter@{Json::StyledWriter}}
+\doxysubsubsection{\texorpdfstring{writeWithIndent()}{writeWithIndent()}}
+{\footnotesize\ttfamily void Json\+::\+Styled\+Writer\+::write\+With\+Indent (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{classJson_1_1StyledWriter_a7b3cc9da3cb455ee9b2752307ac21b58_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJson_1_1StyledWriter_a7b3cc9da3cb455ee9b2752307ac21b58_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classJson_1_1StyledWriter_acaabfa48b50a8bb7fa9ce98e2ae971d9}\label{classJson_1_1StyledWriter_acaabfa48b50a8bb7fa9ce98e2ae971d9}} 
+\index{Json::StyledWriter@{Json::StyledWriter}!addChildValues\_@{addChildValues\_}}
+\index{addChildValues\_@{addChildValues\_}!Json::StyledWriter@{Json::StyledWriter}}
+\doxysubsubsection{\texorpdfstring{addChildValues\_}{addChildValues\_}}
+{\footnotesize\ttfamily bool Json\+::\+Styled\+Writer\+::add\+Child\+Values\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classJson_1_1StyledWriter_a1f905495f0705365af117ec541e29fdf}\label{classJson_1_1StyledWriter_a1f905495f0705365af117ec541e29fdf}} 
+\index{Json::StyledWriter@{Json::StyledWriter}!childValues\_@{childValues\_}}
+\index{childValues\_@{childValues\_}!Json::StyledWriter@{Json::StyledWriter}}
+\doxysubsubsection{\texorpdfstring{childValues\_}{childValues\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classJson_1_1StyledWriter_a0b102abcd4b7e11eb22df63921e097df}{Child\+Values}} Json\+::\+Styled\+Writer\+::child\+Values\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classJson_1_1StyledWriter_ac092c93313e7ab202b13e075d682faea}\label{classJson_1_1StyledWriter_ac092c93313e7ab202b13e075d682faea}} 
+\index{Json::StyledWriter@{Json::StyledWriter}!document\_@{document\_}}
+\index{document\_@{document\_}!Json::StyledWriter@{Json::StyledWriter}}
+\doxysubsubsection{\texorpdfstring{document\_}{document\_}}
+{\footnotesize\ttfamily std\+::string Json\+::\+Styled\+Writer\+::document\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classJson_1_1StyledWriter_ae911f06042935286c24a9fb23dba78bd}\label{classJson_1_1StyledWriter_ae911f06042935286c24a9fb23dba78bd}} 
+\index{Json::StyledWriter@{Json::StyledWriter}!indentSize\_@{indentSize\_}}
+\index{indentSize\_@{indentSize\_}!Json::StyledWriter@{Json::StyledWriter}}
+\doxysubsubsection{\texorpdfstring{indentSize\_}{indentSize\_}}
+{\footnotesize\ttfamily int Json\+::\+Styled\+Writer\+::indent\+Size\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classJson_1_1StyledWriter_a98a33f1d4c853a4dbf87ca17499c5830}\label{classJson_1_1StyledWriter_a98a33f1d4c853a4dbf87ca17499c5830}} 
+\index{Json::StyledWriter@{Json::StyledWriter}!indentString\_@{indentString\_}}
+\index{indentString\_@{indentString\_}!Json::StyledWriter@{Json::StyledWriter}}
+\doxysubsubsection{\texorpdfstring{indentString\_}{indentString\_}}
+{\footnotesize\ttfamily std\+::string Json\+::\+Styled\+Writer\+::indent\+String\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classJson_1_1StyledWriter_a9c8fc62cb4f3b4a6dbed470fea2aa567}\label{classJson_1_1StyledWriter_a9c8fc62cb4f3b4a6dbed470fea2aa567}} 
+\index{Json::StyledWriter@{Json::StyledWriter}!rightMargin\_@{rightMargin\_}}
+\index{rightMargin\_@{rightMargin\_}!Json::StyledWriter@{Json::StyledWriter}}
+\doxysubsubsection{\texorpdfstring{rightMargin\_}{rightMargin\_}}
+{\footnotesize\ttfamily int Json\+::\+Styled\+Writer\+::right\+Margin\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sourse/include/json/\mbox{\hyperlink{json_8h}{json.\+h}}\item 
+sourse/src/\mbox{\hyperlink{jsoncpp_8cpp}{jsoncpp.\+cpp}}\end{DoxyCompactItemize}

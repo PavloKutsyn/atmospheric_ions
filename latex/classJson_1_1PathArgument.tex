@@ -1,0 +1,143 @@
+\hypertarget{classJson_1_1PathArgument}{}\doxysection{Json\+::Path\+Argument Class Reference}
+\label{classJson_1_1PathArgument}\index{Json::PathArgument@{Json::PathArgument}}
+
+
+Experimental and untested\+: represents an element of the \char`\"{}path\char`\"{} to access a node.  
+
+
+
+
+{\ttfamily \#include $<$json.\+h$>$}
+
+
+
+Collaboration diagram for Json\+::Path\+Argument\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classJson_1_1PathArgument__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classJson_1_1PathArgument_a3c96ed20c56a55eb76d37a11553c528e}{Path\+Argument}} ()
+\item 
+\mbox{\hyperlink{classJson_1_1PathArgument_a53c5b27143b161301b95fd544c139ecf}{Path\+Argument}} (\mbox{\hyperlink{namespaceJson_a8048e741f2177c3b5d9ede4a5b8c53c2}{Array\+Index}} index)
+\item 
+\mbox{\hyperlink{classJson_1_1PathArgument_a9690417a8a40e6e49f2acdf6c9281345}{Path\+Argument}} (const char $\ast$key)
+\item 
+\mbox{\hyperlink{classJson_1_1PathArgument_a08f872cfee4fc600f7fa3bcaaff0d41c}{Path\+Argument}} (const std\+::string \&key)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classJson_1_1PathArgument_a2420bbad778573c147e578701b84d9b9}{Kind}} \{ \mbox{\hyperlink{classJson_1_1PathArgument_a2420bbad778573c147e578701b84d9b9afa8c7a261ccb8ae5171d2372321c2698}{kind\+None}} = 0
+, \mbox{\hyperlink{classJson_1_1PathArgument_a2420bbad778573c147e578701b84d9b9ae5a976b898111903334cb131f5e03dc4}{kind\+Index}}
+, \mbox{\hyperlink{classJson_1_1PathArgument_a2420bbad778573c147e578701b84d9b9a74f5968d06c01701b7a46092c33ba7d1}{kind\+Key}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classJson_1_1PathArgument_a5d901b404323b61f066fb1adb3babfe1}{key\+\_\+}}
+\item 
+\mbox{\hyperlink{namespaceJson_a8048e741f2177c3b5d9ede4a5b8c53c2}{Array\+Index}} \mbox{\hyperlink{classJson_1_1PathArgument_afd5857d1b6bfaae6961333bdae7bd5ec}{index\+\_\+}}
+\item 
+\mbox{\hyperlink{classJson_1_1PathArgument_a2420bbad778573c147e578701b84d9b9}{Kind}} \mbox{\hyperlink{classJson_1_1PathArgument_ad4bc4b544b155a3d9c7788572ecf991b}{kind\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classJson_1_1PathArgument_a4877239a6b7f09fbf5a61ca68a49d74c}{Path}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Experimental and untested\+: represents an element of the \char`\"{}path\char`\"{} to access a node. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classJson_1_1PathArgument_a2420bbad778573c147e578701b84d9b9}\label{classJson_1_1PathArgument_a2420bbad778573c147e578701b84d9b9}} 
+\index{Json::PathArgument@{Json::PathArgument}!Kind@{Kind}}
+\index{Kind@{Kind}!Json::PathArgument@{Json::PathArgument}}
+\doxysubsubsection{\texorpdfstring{Kind}{Kind}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classJson_1_1PathArgument_a2420bbad778573c147e578701b84d9b9}{Json\+::\+Path\+Argument\+::\+Kind}}\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kindNone@{kindNone}!Json::PathArgument@{Json::PathArgument}}\index{Json::PathArgument@{Json::PathArgument}!kindNone@{kindNone}}}\mbox{\Hypertarget{classJson_1_1PathArgument_a2420bbad778573c147e578701b84d9b9afa8c7a261ccb8ae5171d2372321c2698}\label{classJson_1_1PathArgument_a2420bbad778573c147e578701b84d9b9afa8c7a261ccb8ae5171d2372321c2698}} 
+kind\+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kindIndex@{kindIndex}!Json::PathArgument@{Json::PathArgument}}\index{Json::PathArgument@{Json::PathArgument}!kindIndex@{kindIndex}}}\mbox{\Hypertarget{classJson_1_1PathArgument_a2420bbad778573c147e578701b84d9b9ae5a976b898111903334cb131f5e03dc4}\label{classJson_1_1PathArgument_a2420bbad778573c147e578701b84d9b9ae5a976b898111903334cb131f5e03dc4}} 
+kind\+Index&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kindKey@{kindKey}!Json::PathArgument@{Json::PathArgument}}\index{Json::PathArgument@{Json::PathArgument}!kindKey@{kindKey}}}\mbox{\Hypertarget{classJson_1_1PathArgument_a2420bbad778573c147e578701b84d9b9a74f5968d06c01701b7a46092c33ba7d1}\label{classJson_1_1PathArgument_a2420bbad778573c147e578701b84d9b9a74f5968d06c01701b7a46092c33ba7d1}} 
+kind\+Key&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classJson_1_1PathArgument_a3c96ed20c56a55eb76d37a11553c528e}\label{classJson_1_1PathArgument_a3c96ed20c56a55eb76d37a11553c528e}} 
+\index{Json::PathArgument@{Json::PathArgument}!PathArgument@{PathArgument}}
+\index{PathArgument@{PathArgument}!Json::PathArgument@{Json::PathArgument}}
+\doxysubsubsection{\texorpdfstring{PathArgument()}{PathArgument()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Json\+::\+Path\+Argument\+::\+Path\+Argument (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classJson_1_1PathArgument_a53c5b27143b161301b95fd544c139ecf}\label{classJson_1_1PathArgument_a53c5b27143b161301b95fd544c139ecf}} 
+\index{Json::PathArgument@{Json::PathArgument}!PathArgument@{PathArgument}}
+\index{PathArgument@{PathArgument}!Json::PathArgument@{Json::PathArgument}}
+\doxysubsubsection{\texorpdfstring{PathArgument()}{PathArgument()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Json\+::\+Path\+Argument\+::\+Path\+Argument (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceJson_a8048e741f2177c3b5d9ede4a5b8c53c2}{Array\+Index}}}]{index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classJson_1_1PathArgument_a9690417a8a40e6e49f2acdf6c9281345}\label{classJson_1_1PathArgument_a9690417a8a40e6e49f2acdf6c9281345}} 
+\index{Json::PathArgument@{Json::PathArgument}!PathArgument@{PathArgument}}
+\index{PathArgument@{PathArgument}!Json::PathArgument@{Json::PathArgument}}
+\doxysubsubsection{\texorpdfstring{PathArgument()}{PathArgument()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Json\+::\+Path\+Argument\+::\+Path\+Argument (\begin{DoxyParamCaption}\item[{const char $\ast$}]{key }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classJson_1_1PathArgument_a08f872cfee4fc600f7fa3bcaaff0d41c}\label{classJson_1_1PathArgument_a08f872cfee4fc600f7fa3bcaaff0d41c}} 
+\index{Json::PathArgument@{Json::PathArgument}!PathArgument@{PathArgument}}
+\index{PathArgument@{PathArgument}!Json::PathArgument@{Json::PathArgument}}
+\doxysubsubsection{\texorpdfstring{PathArgument()}{PathArgument()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Json\+::\+Path\+Argument\+::\+Path\+Argument (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classJson_1_1PathArgument_a4877239a6b7f09fbf5a61ca68a49d74c}\label{classJson_1_1PathArgument_a4877239a6b7f09fbf5a61ca68a49d74c}} 
+\index{Json::PathArgument@{Json::PathArgument}!Path@{Path}}
+\index{Path@{Path}!Json::PathArgument@{Json::PathArgument}}
+\doxysubsubsection{\texorpdfstring{Path}{Path}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classJson_1_1Path}{Path}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classJson_1_1PathArgument_afd5857d1b6bfaae6961333bdae7bd5ec}\label{classJson_1_1PathArgument_afd5857d1b6bfaae6961333bdae7bd5ec}} 
+\index{Json::PathArgument@{Json::PathArgument}!index\_@{index\_}}
+\index{index\_@{index\_}!Json::PathArgument@{Json::PathArgument}}
+\doxysubsubsection{\texorpdfstring{index\_}{index\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceJson_a8048e741f2177c3b5d9ede4a5b8c53c2}{Array\+Index}} Json\+::\+Path\+Argument\+::index\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classJson_1_1PathArgument_a5d901b404323b61f066fb1adb3babfe1}\label{classJson_1_1PathArgument_a5d901b404323b61f066fb1adb3babfe1}} 
+\index{Json::PathArgument@{Json::PathArgument}!key\_@{key\_}}
+\index{key\_@{key\_}!Json::PathArgument@{Json::PathArgument}}
+\doxysubsubsection{\texorpdfstring{key\_}{key\_}}
+{\footnotesize\ttfamily std\+::string Json\+::\+Path\+Argument\+::key\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classJson_1_1PathArgument_ad4bc4b544b155a3d9c7788572ecf991b}\label{classJson_1_1PathArgument_ad4bc4b544b155a3d9c7788572ecf991b}} 
+\index{Json::PathArgument@{Json::PathArgument}!kind\_@{kind\_}}
+\index{kind\_@{kind\_}!Json::PathArgument@{Json::PathArgument}}
+\doxysubsubsection{\texorpdfstring{kind\_}{kind\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classJson_1_1PathArgument_a2420bbad778573c147e578701b84d9b9}{Kind}} Json\+::\+Path\+Argument\+::kind\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sourse/include/json/\mbox{\hyperlink{json_8h}{json.\+h}}\item 
+sourse/src/\mbox{\hyperlink{jsoncpp_8cpp}{jsoncpp.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,12 @@
+<map id="CRYGenerator" name="CRYGenerator">
+<area shape="rect" id="node1" title=" " alt="" coords="521,1131,675,1443"/>
+<area shape="rect" id="node2" href="$classCRYPrimary.html" title=" " alt="" coords="436,705,579,987"/>
+<area shape="rect" id="node3" href="$classCRYBinning.html" title=" " alt="" coords="5,264,137,473"/>
+<area shape="rect" id="node4" href="$classCRYAbsFunction.html" title=" " alt="" coords="341,264,503,473"/>
+<area shape="rect" id="node5" href="$classCRYPdf.html" title=" " alt="" coords="162,191,317,547"/>
+<area shape="rect" id="node6" href="$classCRYParameter.html" title=" " alt="" coords="527,315,677,422"/>
+<area shape="rect" id="node7" href="$classCRYAbsParameter.html" title=" " alt="" coords="515,5,689,141"/>
+<area shape="rect" id="node8" href="$classCRYUtils.html" title=" " alt="" coords="701,286,892,451"/>
+<area shape="rect" id="node9" href="$classCRYSetup.html" title=" " alt="" coords="766,734,942,958"/>
+<area shape="rect" id="node10" href="$classCRYParticle.html" title=" " alt="" coords="967,624,1093,1068"/>
+</map>

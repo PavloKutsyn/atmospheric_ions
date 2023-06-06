@@ -1,0 +1,414 @@
+\hypertarget{structJson_1_1BuiltStyledStreamWriter}{}\doxysection{Json\+::Built\+Styled\+Stream\+Writer Struct Reference}
+\label{structJson_1_1BuiltStyledStreamWriter}\index{Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}}
+
+
+Inheritance diagram for Json\+::Built\+Styled\+Stream\+Writer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{structJson_1_1BuiltStyledStreamWriter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Json\+::Built\+Styled\+Stream\+Writer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{structJson_1_1BuiltStyledStreamWriter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structJson_1_1BuiltStyledStreamWriter_a3c5c0a88ff6b04e1e94a001f82544c65}{Built\+Styled\+Stream\+Writer}} (std\+::string const \&indentation, \mbox{\hyperlink{structJson_1_1CommentStyle_a51fc08f3518fd81eba12f340d19a3d0c}{Comment\+Style\+::\+Enum}} cs, std\+::string const \&colon\+Symbol, std\+::string const \&null\+Symbol, std\+::string const \&ending\+Line\+Feed\+Symbol)
+\item 
+virtual int \mbox{\hyperlink{structJson_1_1BuiltStyledStreamWriter_ab8810d938c35c8442cbffcd001628cd0}{write}} (\mbox{\hyperlink{classJson_1_1Value}{Value}} const \&root, std\+::ostream $\ast$sout)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{structJson_1_1BuiltStyledStreamWriter_a8356597862a354bcd55a7cb6e0512899}{Child\+Values}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{structJson_1_1BuiltStyledStreamWriter_a7c9da861861e570a51b45f270c9ff150}{write\+Value}} (\mbox{\hyperlink{classJson_1_1Value}{Value}} const \&value)
+\item 
+void \mbox{\hyperlink{structJson_1_1BuiltStyledStreamWriter_acd20e9274bbcf7876ef3af2e7d23a31f}{write\+Array\+Value}} (\mbox{\hyperlink{classJson_1_1Value}{Value}} const \&value)
+\item 
+bool \mbox{\hyperlink{structJson_1_1BuiltStyledStreamWriter_af423fd33b3d580506ea3efc53b05a077}{is\+Multine\+Array}} (\mbox{\hyperlink{classJson_1_1Value}{Value}} const \&value)
+\item 
+void \mbox{\hyperlink{structJson_1_1BuiltStyledStreamWriter_a53de0fe57c883d621c7255e49248651e}{push\+Value}} (std\+::string const \&value)
+\item 
+void \mbox{\hyperlink{structJson_1_1BuiltStyledStreamWriter_a2b38a3714d415c4bd3b4812897130f3d}{write\+Indent}} ()
+\item 
+void \mbox{\hyperlink{structJson_1_1BuiltStyledStreamWriter_a764c6d530b5bd660c4a7d1ad4eff6b8d}{write\+With\+Indent}} (std\+::string const \&value)
+\item 
+void \mbox{\hyperlink{structJson_1_1BuiltStyledStreamWriter_a73e09692a2cfbd6e67836b060dc34a9f}{indent}} ()
+\item 
+void \mbox{\hyperlink{structJson_1_1BuiltStyledStreamWriter_a0da6c6f603e00c8c6e38af553edd8c55}{unindent}} ()
+\item 
+void \mbox{\hyperlink{structJson_1_1BuiltStyledStreamWriter_a32c4afca4e08fba79bb0a80a8010283a}{write\+Comment\+Before\+Value}} (\mbox{\hyperlink{classJson_1_1Value}{Value}} const \&root)
+\item 
+void \mbox{\hyperlink{structJson_1_1BuiltStyledStreamWriter_a89625b134fce0255263ca40e6125742b}{write\+Comment\+After\+Value\+On\+Same\+Line}} (\mbox{\hyperlink{classJson_1_1Value}{Value}} const \&root)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{structJson_1_1BuiltStyledStreamWriter_a457c2f3c1e8c952caeb60e52477d0c9a}{has\+Comment\+For\+Value}} (const \mbox{\hyperlink{classJson_1_1Value}{Value}} \&value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structJson_1_1BuiltStyledStreamWriter_a8356597862a354bcd55a7cb6e0512899}{Child\+Values}} \mbox{\hyperlink{structJson_1_1BuiltStyledStreamWriter_a47d562d7874c5b1e68995bd62f575792}{child\+Values\+\_\+}}
+\item 
+std\+::string \mbox{\hyperlink{structJson_1_1BuiltStyledStreamWriter_a2abfd5beb7f33adc3f690ce4f618aa2f}{indent\+String\+\_\+}}
+\item 
+int \mbox{\hyperlink{structJson_1_1BuiltStyledStreamWriter_a3a0b46b31273cf61cf3564fba28ea03b}{right\+Margin\+\_\+}}
+\item 
+std\+::string \mbox{\hyperlink{structJson_1_1BuiltStyledStreamWriter_ab1d7561ca0f480cb46cc113e1005e8ac}{indentation\+\_\+}}
+\item 
+\mbox{\hyperlink{structJson_1_1CommentStyle_a51fc08f3518fd81eba12f340d19a3d0c}{Comment\+Style\+::\+Enum}} \mbox{\hyperlink{structJson_1_1BuiltStyledStreamWriter_a89a9c76c7531143b52785861ba21c1d4}{cs\+\_\+}}
+\item 
+std\+::string \mbox{\hyperlink{structJson_1_1BuiltStyledStreamWriter_ac28b111b1c3ecc1ea6d981c8530ceca4}{colon\+Symbol\+\_\+}}
+\item 
+std\+::string \mbox{\hyperlink{structJson_1_1BuiltStyledStreamWriter_a238a8f4737c9835af78ea80cc4f12658}{null\+Symbol\+\_\+}}
+\item 
+std\+::string \mbox{\hyperlink{structJson_1_1BuiltStyledStreamWriter_a85a8c0e3c9deb2503d497f61bc0da74c}{ending\+Line\+Feed\+Symbol\+\_\+}}
+\item 
+bool \mbox{\hyperlink{structJson_1_1BuiltStyledStreamWriter_abed9cc31da503b48798e7cea68c42e16}{add\+Child\+Values\+\_\+}}\+: 1
+\item 
+bool \mbox{\hyperlink{structJson_1_1BuiltStyledStreamWriter_a6aa0ad023e623f600103631a6bca6d10}{indented\+\_\+}}\+: 1
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structJson_1_1BuiltStyledStreamWriter_a8356597862a354bcd55a7cb6e0512899}\label{structJson_1_1BuiltStyledStreamWriter_a8356597862a354bcd55a7cb6e0512899}} 
+\index{Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}!ChildValues@{ChildValues}}
+\index{ChildValues@{ChildValues}!Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}}
+\doxysubsubsection{\texorpdfstring{ChildValues}{ChildValues}}
+{\footnotesize\ttfamily typedef std\+::vector$<$std\+::string$>$ \mbox{\hyperlink{structJson_1_1BuiltStyledStreamWriter_a8356597862a354bcd55a7cb6e0512899}{Json\+::\+Built\+Styled\+Stream\+Writer\+::\+Child\+Values}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structJson_1_1BuiltStyledStreamWriter_a3c5c0a88ff6b04e1e94a001f82544c65}\label{structJson_1_1BuiltStyledStreamWriter_a3c5c0a88ff6b04e1e94a001f82544c65}} 
+\index{Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}!BuiltStyledStreamWriter@{BuiltStyledStreamWriter}}
+\index{BuiltStyledStreamWriter@{BuiltStyledStreamWriter}!Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}}
+\doxysubsubsection{\texorpdfstring{BuiltStyledStreamWriter()}{BuiltStyledStreamWriter()}}
+{\footnotesize\ttfamily Json\+::\+Built\+Styled\+Stream\+Writer\+::\+Built\+Styled\+Stream\+Writer (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{indentation,  }\item[{\mbox{\hyperlink{structJson_1_1CommentStyle_a51fc08f3518fd81eba12f340d19a3d0c}{Comment\+Style\+::\+Enum}}}]{cs,  }\item[{std\+::string const \&}]{colon\+Symbol,  }\item[{std\+::string const \&}]{null\+Symbol,  }\item[{std\+::string const \&}]{ending\+Line\+Feed\+Symbol }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structJson_1_1BuiltStyledStreamWriter_a457c2f3c1e8c952caeb60e52477d0c9a}\label{structJson_1_1BuiltStyledStreamWriter_a457c2f3c1e8c952caeb60e52477d0c9a}} 
+\index{Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}!hasCommentForValue@{hasCommentForValue}}
+\index{hasCommentForValue@{hasCommentForValue}!Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}}
+\doxysubsubsection{\texorpdfstring{hasCommentForValue()}{hasCommentForValue()}}
+{\footnotesize\ttfamily bool Json\+::\+Built\+Styled\+Stream\+Writer\+::has\+Comment\+For\+Value (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classJson_1_1Value}{Value}} \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structJson_1_1BuiltStyledStreamWriter_a457c2f3c1e8c952caeb60e52477d0c9a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structJson_1_1BuiltStyledStreamWriter_a457c2f3c1e8c952caeb60e52477d0c9a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structJson_1_1BuiltStyledStreamWriter_a73e09692a2cfbd6e67836b060dc34a9f}\label{structJson_1_1BuiltStyledStreamWriter_a73e09692a2cfbd6e67836b060dc34a9f}} 
+\index{Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}!indent@{indent}}
+\index{indent@{indent}!Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}}
+\doxysubsubsection{\texorpdfstring{indent()}{indent()}}
+{\footnotesize\ttfamily void Json\+::\+Built\+Styled\+Stream\+Writer\+::indent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structJson_1_1BuiltStyledStreamWriter_a73e09692a2cfbd6e67836b060dc34a9f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structJson_1_1BuiltStyledStreamWriter_af423fd33b3d580506ea3efc53b05a077}\label{structJson_1_1BuiltStyledStreamWriter_af423fd33b3d580506ea3efc53b05a077}} 
+\index{Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}!isMultineArray@{isMultineArray}}
+\index{isMultineArray@{isMultineArray}!Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}}
+\doxysubsubsection{\texorpdfstring{isMultineArray()}{isMultineArray()}}
+{\footnotesize\ttfamily bool Json\+::\+Built\+Styled\+Stream\+Writer\+::is\+Multine\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classJson_1_1Value}{Value}} const \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structJson_1_1BuiltStyledStreamWriter_af423fd33b3d580506ea3efc53b05a077_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structJson_1_1BuiltStyledStreamWriter_af423fd33b3d580506ea3efc53b05a077_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structJson_1_1BuiltStyledStreamWriter_a53de0fe57c883d621c7255e49248651e}\label{structJson_1_1BuiltStyledStreamWriter_a53de0fe57c883d621c7255e49248651e}} 
+\index{Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}!pushValue@{pushValue}}
+\index{pushValue@{pushValue}!Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}}
+\doxysubsubsection{\texorpdfstring{pushValue()}{pushValue()}}
+{\footnotesize\ttfamily void Json\+::\+Built\+Styled\+Stream\+Writer\+::push\+Value (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structJson_1_1BuiltStyledStreamWriter_a53de0fe57c883d621c7255e49248651e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structJson_1_1BuiltStyledStreamWriter_a0da6c6f603e00c8c6e38af553edd8c55}\label{structJson_1_1BuiltStyledStreamWriter_a0da6c6f603e00c8c6e38af553edd8c55}} 
+\index{Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}!unindent@{unindent}}
+\index{unindent@{unindent}!Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}}
+\doxysubsubsection{\texorpdfstring{unindent()}{unindent()}}
+{\footnotesize\ttfamily void Json\+::\+Built\+Styled\+Stream\+Writer\+::unindent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structJson_1_1BuiltStyledStreamWriter_a0da6c6f603e00c8c6e38af553edd8c55_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structJson_1_1BuiltStyledStreamWriter_ab8810d938c35c8442cbffcd001628cd0}\label{structJson_1_1BuiltStyledStreamWriter_ab8810d938c35c8442cbffcd001628cd0}} 
+\index{Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}!write@{write}}
+\index{write@{write}!Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily int Json\+::\+Built\+Styled\+Stream\+Writer\+::write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classJson_1_1Value}{Value}} const \&}]{root,  }\item[{std\+::ostream $\ast$}]{sout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Write \mbox{\hyperlink{classJson_1_1Value}{Value}} into document as configured in sub-\/class. Do not take ownership of sout, but maintain a reference during function. \begin{DoxyPrecond}{Precondition}
+sout != NULL 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+zero on success (For now, we always return zero, so check the stream instead.) 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::exception} & possibly, depending on configuration \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{classJson_1_1StreamWriter_a237368cf13b41decc015640d25f176ab}{Json\+::\+Stream\+Writer}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structJson_1_1BuiltStyledStreamWriter_ab8810d938c35c8442cbffcd001628cd0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structJson_1_1BuiltStyledStreamWriter_acd20e9274bbcf7876ef3af2e7d23a31f}\label{structJson_1_1BuiltStyledStreamWriter_acd20e9274bbcf7876ef3af2e7d23a31f}} 
+\index{Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}!writeArrayValue@{writeArrayValue}}
+\index{writeArrayValue@{writeArrayValue}!Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}}
+\doxysubsubsection{\texorpdfstring{writeArrayValue()}{writeArrayValue()}}
+{\footnotesize\ttfamily void Json\+::\+Built\+Styled\+Stream\+Writer\+::write\+Array\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classJson_1_1Value}{Value}} const \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structJson_1_1BuiltStyledStreamWriter_acd20e9274bbcf7876ef3af2e7d23a31f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structJson_1_1BuiltStyledStreamWriter_acd20e9274bbcf7876ef3af2e7d23a31f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structJson_1_1BuiltStyledStreamWriter_a89625b134fce0255263ca40e6125742b}\label{structJson_1_1BuiltStyledStreamWriter_a89625b134fce0255263ca40e6125742b}} 
+\index{Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}!writeCommentAfterValueOnSameLine@{writeCommentAfterValueOnSameLine}}
+\index{writeCommentAfterValueOnSameLine@{writeCommentAfterValueOnSameLine}!Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}}
+\doxysubsubsection{\texorpdfstring{writeCommentAfterValueOnSameLine()}{writeCommentAfterValueOnSameLine()}}
+{\footnotesize\ttfamily void Json\+::\+Built\+Styled\+Stream\+Writer\+::write\+Comment\+After\+Value\+On\+Same\+Line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classJson_1_1Value}{Value}} const \&}]{root }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structJson_1_1BuiltStyledStreamWriter_a89625b134fce0255263ca40e6125742b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structJson_1_1BuiltStyledStreamWriter_a89625b134fce0255263ca40e6125742b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structJson_1_1BuiltStyledStreamWriter_a32c4afca4e08fba79bb0a80a8010283a}\label{structJson_1_1BuiltStyledStreamWriter_a32c4afca4e08fba79bb0a80a8010283a}} 
+\index{Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}!writeCommentBeforeValue@{writeCommentBeforeValue}}
+\index{writeCommentBeforeValue@{writeCommentBeforeValue}!Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}}
+\doxysubsubsection{\texorpdfstring{writeCommentBeforeValue()}{writeCommentBeforeValue()}}
+{\footnotesize\ttfamily void Json\+::\+Built\+Styled\+Stream\+Writer\+::write\+Comment\+Before\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classJson_1_1Value}{Value}} const \&}]{root }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structJson_1_1BuiltStyledStreamWriter_a32c4afca4e08fba79bb0a80a8010283a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structJson_1_1BuiltStyledStreamWriter_a32c4afca4e08fba79bb0a80a8010283a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structJson_1_1BuiltStyledStreamWriter_a2b38a3714d415c4bd3b4812897130f3d}\label{structJson_1_1BuiltStyledStreamWriter_a2b38a3714d415c4bd3b4812897130f3d}} 
+\index{Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}!writeIndent@{writeIndent}}
+\index{writeIndent@{writeIndent}!Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}}
+\doxysubsubsection{\texorpdfstring{writeIndent()}{writeIndent()}}
+{\footnotesize\ttfamily void Json\+::\+Built\+Styled\+Stream\+Writer\+::write\+Indent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structJson_1_1BuiltStyledStreamWriter_a2b38a3714d415c4bd3b4812897130f3d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structJson_1_1BuiltStyledStreamWriter_a7c9da861861e570a51b45f270c9ff150}\label{structJson_1_1BuiltStyledStreamWriter_a7c9da861861e570a51b45f270c9ff150}} 
+\index{Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}!writeValue@{writeValue}}
+\index{writeValue@{writeValue}!Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}}
+\doxysubsubsection{\texorpdfstring{writeValue()}{writeValue()}}
+{\footnotesize\ttfamily void Json\+::\+Built\+Styled\+Stream\+Writer\+::write\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classJson_1_1Value}{Value}} const \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structJson_1_1BuiltStyledStreamWriter_a7c9da861861e570a51b45f270c9ff150_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structJson_1_1BuiltStyledStreamWriter_a7c9da861861e570a51b45f270c9ff150_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structJson_1_1BuiltStyledStreamWriter_a764c6d530b5bd660c4a7d1ad4eff6b8d}\label{structJson_1_1BuiltStyledStreamWriter_a764c6d530b5bd660c4a7d1ad4eff6b8d}} 
+\index{Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}!writeWithIndent@{writeWithIndent}}
+\index{writeWithIndent@{writeWithIndent}!Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}}
+\doxysubsubsection{\texorpdfstring{writeWithIndent()}{writeWithIndent()}}
+{\footnotesize\ttfamily void Json\+::\+Built\+Styled\+Stream\+Writer\+::write\+With\+Indent (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structJson_1_1BuiltStyledStreamWriter_a764c6d530b5bd660c4a7d1ad4eff6b8d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structJson_1_1BuiltStyledStreamWriter_a764c6d530b5bd660c4a7d1ad4eff6b8d_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structJson_1_1BuiltStyledStreamWriter_abed9cc31da503b48798e7cea68c42e16}\label{structJson_1_1BuiltStyledStreamWriter_abed9cc31da503b48798e7cea68c42e16}} 
+\index{Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}!addChildValues\_@{addChildValues\_}}
+\index{addChildValues\_@{addChildValues\_}!Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}}
+\doxysubsubsection{\texorpdfstring{addChildValues\_}{addChildValues\_}}
+{\footnotesize\ttfamily bool Json\+::\+Built\+Styled\+Stream\+Writer\+::add\+Child\+Values\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structJson_1_1BuiltStyledStreamWriter_a47d562d7874c5b1e68995bd62f575792}\label{structJson_1_1BuiltStyledStreamWriter_a47d562d7874c5b1e68995bd62f575792}} 
+\index{Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}!childValues\_@{childValues\_}}
+\index{childValues\_@{childValues\_}!Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}}
+\doxysubsubsection{\texorpdfstring{childValues\_}{childValues\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structJson_1_1BuiltStyledStreamWriter_a8356597862a354bcd55a7cb6e0512899}{Child\+Values}} Json\+::\+Built\+Styled\+Stream\+Writer\+::child\+Values\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structJson_1_1BuiltStyledStreamWriter_ac28b111b1c3ecc1ea6d981c8530ceca4}\label{structJson_1_1BuiltStyledStreamWriter_ac28b111b1c3ecc1ea6d981c8530ceca4}} 
+\index{Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}!colonSymbol\_@{colonSymbol\_}}
+\index{colonSymbol\_@{colonSymbol\_}!Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}}
+\doxysubsubsection{\texorpdfstring{colonSymbol\_}{colonSymbol\_}}
+{\footnotesize\ttfamily std\+::string Json\+::\+Built\+Styled\+Stream\+Writer\+::colon\+Symbol\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structJson_1_1BuiltStyledStreamWriter_a89a9c76c7531143b52785861ba21c1d4}\label{structJson_1_1BuiltStyledStreamWriter_a89a9c76c7531143b52785861ba21c1d4}} 
+\index{Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}!cs\_@{cs\_}}
+\index{cs\_@{cs\_}!Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}}
+\doxysubsubsection{\texorpdfstring{cs\_}{cs\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structJson_1_1CommentStyle_a51fc08f3518fd81eba12f340d19a3d0c}{Comment\+Style\+::\+Enum}} Json\+::\+Built\+Styled\+Stream\+Writer\+::cs\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structJson_1_1BuiltStyledStreamWriter_a85a8c0e3c9deb2503d497f61bc0da74c}\label{structJson_1_1BuiltStyledStreamWriter_a85a8c0e3c9deb2503d497f61bc0da74c}} 
+\index{Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}!endingLineFeedSymbol\_@{endingLineFeedSymbol\_}}
+\index{endingLineFeedSymbol\_@{endingLineFeedSymbol\_}!Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}}
+\doxysubsubsection{\texorpdfstring{endingLineFeedSymbol\_}{endingLineFeedSymbol\_}}
+{\footnotesize\ttfamily std\+::string Json\+::\+Built\+Styled\+Stream\+Writer\+::ending\+Line\+Feed\+Symbol\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structJson_1_1BuiltStyledStreamWriter_ab1d7561ca0f480cb46cc113e1005e8ac}\label{structJson_1_1BuiltStyledStreamWriter_ab1d7561ca0f480cb46cc113e1005e8ac}} 
+\index{Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}!indentation\_@{indentation\_}}
+\index{indentation\_@{indentation\_}!Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}}
+\doxysubsubsection{\texorpdfstring{indentation\_}{indentation\_}}
+{\footnotesize\ttfamily std\+::string Json\+::\+Built\+Styled\+Stream\+Writer\+::indentation\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structJson_1_1BuiltStyledStreamWriter_a6aa0ad023e623f600103631a6bca6d10}\label{structJson_1_1BuiltStyledStreamWriter_a6aa0ad023e623f600103631a6bca6d10}} 
+\index{Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}!indented\_@{indented\_}}
+\index{indented\_@{indented\_}!Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}}
+\doxysubsubsection{\texorpdfstring{indented\_}{indented\_}}
+{\footnotesize\ttfamily bool Json\+::\+Built\+Styled\+Stream\+Writer\+::indented\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structJson_1_1BuiltStyledStreamWriter_a2abfd5beb7f33adc3f690ce4f618aa2f}\label{structJson_1_1BuiltStyledStreamWriter_a2abfd5beb7f33adc3f690ce4f618aa2f}} 
+\index{Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}!indentString\_@{indentString\_}}
+\index{indentString\_@{indentString\_}!Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}}
+\doxysubsubsection{\texorpdfstring{indentString\_}{indentString\_}}
+{\footnotesize\ttfamily std\+::string Json\+::\+Built\+Styled\+Stream\+Writer\+::indent\+String\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structJson_1_1BuiltStyledStreamWriter_a238a8f4737c9835af78ea80cc4f12658}\label{structJson_1_1BuiltStyledStreamWriter_a238a8f4737c9835af78ea80cc4f12658}} 
+\index{Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}!nullSymbol\_@{nullSymbol\_}}
+\index{nullSymbol\_@{nullSymbol\_}!Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}}
+\doxysubsubsection{\texorpdfstring{nullSymbol\_}{nullSymbol\_}}
+{\footnotesize\ttfamily std\+::string Json\+::\+Built\+Styled\+Stream\+Writer\+::null\+Symbol\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structJson_1_1BuiltStyledStreamWriter_a3a0b46b31273cf61cf3564fba28ea03b}\label{structJson_1_1BuiltStyledStreamWriter_a3a0b46b31273cf61cf3564fba28ea03b}} 
+\index{Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}!rightMargin\_@{rightMargin\_}}
+\index{rightMargin\_@{rightMargin\_}!Json::BuiltStyledStreamWriter@{Json::BuiltStyledStreamWriter}}
+\doxysubsubsection{\texorpdfstring{rightMargin\_}{rightMargin\_}}
+{\footnotesize\ttfamily int Json\+::\+Built\+Styled\+Stream\+Writer\+::right\+Margin\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+sourse/src/\mbox{\hyperlink{jsoncpp_8cpp}{jsoncpp.\+cpp}}\end{DoxyCompactItemize}

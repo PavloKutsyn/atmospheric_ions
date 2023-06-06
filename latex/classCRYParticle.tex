@@ -1,0 +1,396 @@
+\hypertarget{classCRYParticle}{}\doxysection{CRYParticle Class Reference}
+\label{classCRYParticle}\index{CRYParticle@{CRYParticle}}
+
+
+{\ttfamily \#include $<$CRYParticle.\+h$>$}
+
+
+
+Collaboration diagram for CRYParticle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classCRYParticle__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classCRYParticle_a074c51316676486a6afd60f9dc30d80c}{CRYId}} \{ \newline
+\mbox{\hyperlink{classCRYParticle_a074c51316676486a6afd60f9dc30d80ca9f03b1218f0d18ae31911753036d73be}{CRYId\+Min}}
+, \mbox{\hyperlink{classCRYParticle_a074c51316676486a6afd60f9dc30d80ca5f76621d2554862b769b6fba4af83db1}{Neutron}} =CRYId\+Min
+, \mbox{\hyperlink{classCRYParticle_a074c51316676486a6afd60f9dc30d80cacfc8b4bac3f425f7550e61c651f05f0b}{Proton}}
+, \mbox{\hyperlink{classCRYParticle_a074c51316676486a6afd60f9dc30d80ca7ef6a3f268ac36beec0c13651178457e}{Pion}}
+, \newline
+\mbox{\hyperlink{classCRYParticle_a074c51316676486a6afd60f9dc30d80cab592efc45f7fa92480ecafbd4d46f574}{Kaon}}
+, \mbox{\hyperlink{classCRYParticle_a074c51316676486a6afd60f9dc30d80ca837d6650d5c66b1533257c8ddcb0b00b}{Muon}}
+, \mbox{\hyperlink{classCRYParticle_a074c51316676486a6afd60f9dc30d80ca491055b10502fe97272867ece7f87494}{Electron}}
+, \mbox{\hyperlink{classCRYParticle_a074c51316676486a6afd60f9dc30d80ca362c2ca215e935c3f56b784a892c2d57}{Gamma}}
+, \newline
+\mbox{\hyperlink{classCRYParticle_a074c51316676486a6afd60f9dc30d80cad735c023a4ed79321cce92f14ad40162}{CRYId\+Max}} =Gamma
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCRYParticle_adea4f46bc7b399b7449fdc88ec035bc5}{CRYParticle}} (\mbox{\hyperlink{classCRYParticle_a074c51316676486a6afd60f9dc30d80c}{CRYId}} \mbox{\hyperlink{classCRYParticle_aef87dd688e7b6a7317968793c9a9adee}{id}}, int \mbox{\hyperlink{classCRYParticle_a4ebd7c3ebd9bb4e0282c46a76851f71c}{charge}}, double KE)
+\item 
+\mbox{\hyperlink{classCRYParticle_a6784a1ef61f77ceabcc693257850b386}{CRYParticle}} (const \mbox{\hyperlink{classCRYParticle}{CRYParticle}} \&part)
+\item 
+void \mbox{\hyperlink{classCRYParticle_abe703ad692af86f7a3ad6e000cff1938}{set\+Position}} (double \mbox{\hyperlink{classCRYParticle_adee73b610ddd277a43c91e43919587bb}{x}}, double \mbox{\hyperlink{classCRYParticle_a079ef72b67dc46d8d525cf7cf86d1b5b}{y}}, double \mbox{\hyperlink{classCRYParticle_ab4333735fc0d60bd4ebba5bf4219e93a}{z}})
+\item 
+void \mbox{\hyperlink{classCRYParticle_ae64fa1e7eeaece7f8d1633542ebcf2d3}{set\+Direction}} (double \mbox{\hyperlink{classCRYParticle_aa1182298f5f0156c572dbe03ae7b6b0a}{u}}, double \mbox{\hyperlink{classCRYParticle_a3539e1f6af48fb038dd14fa8db68c631}{v}}, double \mbox{\hyperlink{classCRYParticle_a3b91282714aa734d024f678984de05c8}{w}})
+\item 
+void \mbox{\hyperlink{classCRYParticle_aeb231e45ed2d740ef42422d0f215b8f4}{set\+Time}} (double \mbox{\hyperlink{classCRYParticle_ab05442c5cb6392cc4764a456d3129c5f}{t}})
+\item 
+double \mbox{\hyperlink{classCRYParticle_a5b8c72a4ae07cf4ab5f0728a6e304dc2}{ke}} ()
+\item 
+double \mbox{\hyperlink{classCRYParticle_adee73b610ddd277a43c91e43919587bb}{x}} ()
+\item 
+double \mbox{\hyperlink{classCRYParticle_a079ef72b67dc46d8d525cf7cf86d1b5b}{y}} ()
+\item 
+double \mbox{\hyperlink{classCRYParticle_ab4333735fc0d60bd4ebba5bf4219e93a}{z}} ()
+\item 
+double \mbox{\hyperlink{classCRYParticle_aa1182298f5f0156c572dbe03ae7b6b0a}{u}} ()
+\item 
+double \mbox{\hyperlink{classCRYParticle_a3539e1f6af48fb038dd14fa8db68c631}{v}} ()
+\item 
+double \mbox{\hyperlink{classCRYParticle_a3b91282714aa734d024f678984de05c8}{w}} ()
+\item 
+int \mbox{\hyperlink{classCRYParticle_a4ebd7c3ebd9bb4e0282c46a76851f71c}{charge}} ()
+\item 
+double \mbox{\hyperlink{classCRYParticle_ab05442c5cb6392cc4764a456d3129c5f}{t}} ()
+\item 
+\mbox{\hyperlink{classCRYParticle_a074c51316676486a6afd60f9dc30d80c}{CRYParticle\+::\+CRYId}} \mbox{\hyperlink{classCRYParticle_aef87dd688e7b6a7317968793c9a9adee}{id}} ()
+\item 
+int \mbox{\hyperlink{classCRYParticle_a1a13df081d1fbd52a20be739780c636a}{PDGid}} ()
+\item 
+void \mbox{\hyperlink{classCRYParticle_af896c4c989d354fe4e8158073fd71c28}{fill}} (\mbox{\hyperlink{classCRYParticle_a074c51316676486a6afd60f9dc30d80c}{CRYParticle\+::\+CRYId}} \&\mbox{\hyperlink{classCRYParticle_aef87dd688e7b6a7317968793c9a9adee}{id}}, int \&q, double \&\mbox{\hyperlink{classCRYParticle_a5b8c72a4ae07cf4ab5f0728a6e304dc2}{ke}}, double \&\mbox{\hyperlink{classCRYParticle_adee73b610ddd277a43c91e43919587bb}{x}}, double \&\mbox{\hyperlink{classCRYParticle_a079ef72b67dc46d8d525cf7cf86d1b5b}{y}}, double \&\mbox{\hyperlink{classCRYParticle_ab4333735fc0d60bd4ebba5bf4219e93a}{z}}, double \&\mbox{\hyperlink{classCRYParticle_aa1182298f5f0156c572dbe03ae7b6b0a}{u}}, double \&\mbox{\hyperlink{classCRYParticle_a3539e1f6af48fb038dd14fa8db68c631}{v}}, double \&\mbox{\hyperlink{classCRYParticle_a3b91282714aa734d024f678984de05c8}{w}}, double \&\mbox{\hyperlink{classCRYParticle_ab05442c5cb6392cc4764a456d3129c5f}{t}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCRYParticle_a074c51316676486a6afd60f9dc30d80c}{CRYId}} \mbox{\hyperlink{classCRYParticle_a8f36bc913e1e8ee404e9dc612edc62c6}{\+\_\+id}}
+\item 
+int \mbox{\hyperlink{classCRYParticle_ac0fabdf3536719f94f336cfc3fed4537}{\+\_\+charge}}
+\item 
+double \mbox{\hyperlink{classCRYParticle_a1102372708f63a8ea6d5a397f964a00e}{\+\_\+\+KE}}
+\item 
+double \mbox{\hyperlink{classCRYParticle_a81f2bc279f9dd382c43a84b6ee138573}{\+\_\+u}}
+\item 
+double \mbox{\hyperlink{classCRYParticle_ac49f9541df53cc380d8ad3939b9d77c1}{\+\_\+v}}
+\item 
+double \mbox{\hyperlink{classCRYParticle_ab293720ad573e06ce5779687ec1f6d9d}{\+\_\+w}}
+\item 
+double \mbox{\hyperlink{classCRYParticle_ac2e0b090b5ac72bc50adbfb38875df55}{\+\_\+x}}
+\item 
+double \mbox{\hyperlink{classCRYParticle_ae5161f2d2db181186d629db07c6aeea1}{\+\_\+y}}
+\item 
+double \mbox{\hyperlink{classCRYParticle_a4da205ac47fd6d510b24e47297b8adfd}{\+\_\+z}}
+\item 
+double \mbox{\hyperlink{classCRYParticle_aae959185b87e5d28996dca93c03dde21}{\+\_\+t}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classCRYParticle_a074c51316676486a6afd60f9dc30d80c}\label{classCRYParticle_a074c51316676486a6afd60f9dc30d80c}} 
+\index{CRYParticle@{CRYParticle}!CRYId@{CRYId}}
+\index{CRYId@{CRYId}!CRYParticle@{CRYParticle}}
+\doxysubsubsection{\texorpdfstring{CRYId}{CRYId}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classCRYParticle_a074c51316676486a6afd60f9dc30d80c}{CRYParticle\+::\+CRYId}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CRYIdMin@{CRYIdMin}!CRYParticle@{CRYParticle}}\index{CRYParticle@{CRYParticle}!CRYIdMin@{CRYIdMin}}}\mbox{\Hypertarget{classCRYParticle_a074c51316676486a6afd60f9dc30d80ca9f03b1218f0d18ae31911753036d73be}\label{classCRYParticle_a074c51316676486a6afd60f9dc30d80ca9f03b1218f0d18ae31911753036d73be}} 
+CRYId\+Min&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Neutron@{Neutron}!CRYParticle@{CRYParticle}}\index{CRYParticle@{CRYParticle}!Neutron@{Neutron}}}\mbox{\Hypertarget{classCRYParticle_a074c51316676486a6afd60f9dc30d80ca5f76621d2554862b769b6fba4af83db1}\label{classCRYParticle_a074c51316676486a6afd60f9dc30d80ca5f76621d2554862b769b6fba4af83db1}} 
+Neutron&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Proton@{Proton}!CRYParticle@{CRYParticle}}\index{CRYParticle@{CRYParticle}!Proton@{Proton}}}\mbox{\Hypertarget{classCRYParticle_a074c51316676486a6afd60f9dc30d80cacfc8b4bac3f425f7550e61c651f05f0b}\label{classCRYParticle_a074c51316676486a6afd60f9dc30d80cacfc8b4bac3f425f7550e61c651f05f0b}} 
+Proton&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Pion@{Pion}!CRYParticle@{CRYParticle}}\index{CRYParticle@{CRYParticle}!Pion@{Pion}}}\mbox{\Hypertarget{classCRYParticle_a074c51316676486a6afd60f9dc30d80ca7ef6a3f268ac36beec0c13651178457e}\label{classCRYParticle_a074c51316676486a6afd60f9dc30d80ca7ef6a3f268ac36beec0c13651178457e}} 
+Pion&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Kaon@{Kaon}!CRYParticle@{CRYParticle}}\index{CRYParticle@{CRYParticle}!Kaon@{Kaon}}}\mbox{\Hypertarget{classCRYParticle_a074c51316676486a6afd60f9dc30d80cab592efc45f7fa92480ecafbd4d46f574}\label{classCRYParticle_a074c51316676486a6afd60f9dc30d80cab592efc45f7fa92480ecafbd4d46f574}} 
+Kaon&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Muon@{Muon}!CRYParticle@{CRYParticle}}\index{CRYParticle@{CRYParticle}!Muon@{Muon}}}\mbox{\Hypertarget{classCRYParticle_a074c51316676486a6afd60f9dc30d80ca837d6650d5c66b1533257c8ddcb0b00b}\label{classCRYParticle_a074c51316676486a6afd60f9dc30d80ca837d6650d5c66b1533257c8ddcb0b00b}} 
+Muon&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Electron@{Electron}!CRYParticle@{CRYParticle}}\index{CRYParticle@{CRYParticle}!Electron@{Electron}}}\mbox{\Hypertarget{classCRYParticle_a074c51316676486a6afd60f9dc30d80ca491055b10502fe97272867ece7f87494}\label{classCRYParticle_a074c51316676486a6afd60f9dc30d80ca491055b10502fe97272867ece7f87494}} 
+Electron&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Gamma@{Gamma}!CRYParticle@{CRYParticle}}\index{CRYParticle@{CRYParticle}!Gamma@{Gamma}}}\mbox{\Hypertarget{classCRYParticle_a074c51316676486a6afd60f9dc30d80ca362c2ca215e935c3f56b784a892c2d57}\label{classCRYParticle_a074c51316676486a6afd60f9dc30d80ca362c2ca215e935c3f56b784a892c2d57}} 
+Gamma&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CRYIdMax@{CRYIdMax}!CRYParticle@{CRYParticle}}\index{CRYParticle@{CRYParticle}!CRYIdMax@{CRYIdMax}}}\mbox{\Hypertarget{classCRYParticle_a074c51316676486a6afd60f9dc30d80cad735c023a4ed79321cce92f14ad40162}\label{classCRYParticle_a074c51316676486a6afd60f9dc30d80cad735c023a4ed79321cce92f14ad40162}} 
+CRYId\+Max&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCRYParticle_adea4f46bc7b399b7449fdc88ec035bc5}\label{classCRYParticle_adea4f46bc7b399b7449fdc88ec035bc5}} 
+\index{CRYParticle@{CRYParticle}!CRYParticle@{CRYParticle}}
+\index{CRYParticle@{CRYParticle}!CRYParticle@{CRYParticle}}
+\doxysubsubsection{\texorpdfstring{CRYParticle()}{CRYParticle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily CRYParticle\+::\+CRYParticle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCRYParticle_a074c51316676486a6afd60f9dc30d80c}{CRYId}}}]{id,  }\item[{int}]{charge,  }\item[{double}]{KE }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCRYParticle_a6784a1ef61f77ceabcc693257850b386}\label{classCRYParticle_a6784a1ef61f77ceabcc693257850b386}} 
+\index{CRYParticle@{CRYParticle}!CRYParticle@{CRYParticle}}
+\index{CRYParticle@{CRYParticle}!CRYParticle@{CRYParticle}}
+\doxysubsubsection{\texorpdfstring{CRYParticle()}{CRYParticle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily CRYParticle\+::\+CRYParticle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCRYParticle}{CRYParticle}} \&}]{part }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCRYParticle_a4ebd7c3ebd9bb4e0282c46a76851f71c}\label{classCRYParticle_a4ebd7c3ebd9bb4e0282c46a76851f71c}} 
+\index{CRYParticle@{CRYParticle}!charge@{charge}}
+\index{charge@{charge}!CRYParticle@{CRYParticle}}
+\doxysubsubsection{\texorpdfstring{charge()}{charge()}}
+{\footnotesize\ttfamily int CRYParticle\+::charge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCRYParticle_af896c4c989d354fe4e8158073fd71c28}\label{classCRYParticle_af896c4c989d354fe4e8158073fd71c28}} 
+\index{CRYParticle@{CRYParticle}!fill@{fill}}
+\index{fill@{fill}!CRYParticle@{CRYParticle}}
+\doxysubsubsection{\texorpdfstring{fill()}{fill()}}
+{\footnotesize\ttfamily void CRYParticle\+::fill (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCRYParticle_a074c51316676486a6afd60f9dc30d80c}{CRYParticle\+::\+CRYId}} \&}]{id,  }\item[{int \&}]{q,  }\item[{double \&}]{ke,  }\item[{double \&}]{x,  }\item[{double \&}]{y,  }\item[{double \&}]{z,  }\item[{double \&}]{u,  }\item[{double \&}]{v,  }\item[{double \&}]{w,  }\item[{double \&}]{t }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCRYParticle_aef87dd688e7b6a7317968793c9a9adee}\label{classCRYParticle_aef87dd688e7b6a7317968793c9a9adee}} 
+\index{CRYParticle@{CRYParticle}!id@{id}}
+\index{id@{id}!CRYParticle@{CRYParticle}}
+\doxysubsubsection{\texorpdfstring{id()}{id()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCRYParticle_a074c51316676486a6afd60f9dc30d80c}{CRYParticle\+::\+CRYId}} CRYParticle\+::id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCRYParticle_a5b8c72a4ae07cf4ab5f0728a6e304dc2}\label{classCRYParticle_a5b8c72a4ae07cf4ab5f0728a6e304dc2}} 
+\index{CRYParticle@{CRYParticle}!ke@{ke}}
+\index{ke@{ke}!CRYParticle@{CRYParticle}}
+\doxysubsubsection{\texorpdfstring{ke()}{ke()}}
+{\footnotesize\ttfamily double CRYParticle\+::ke (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCRYParticle_a1a13df081d1fbd52a20be739780c636a}\label{classCRYParticle_a1a13df081d1fbd52a20be739780c636a}} 
+\index{CRYParticle@{CRYParticle}!PDGid@{PDGid}}
+\index{PDGid@{PDGid}!CRYParticle@{CRYParticle}}
+\doxysubsubsection{\texorpdfstring{PDGid()}{PDGid()}}
+{\footnotesize\ttfamily int CRYParticle\+::\+PDGid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCRYParticle_ae64fa1e7eeaece7f8d1633542ebcf2d3}\label{classCRYParticle_ae64fa1e7eeaece7f8d1633542ebcf2d3}} 
+\index{CRYParticle@{CRYParticle}!setDirection@{setDirection}}
+\index{setDirection@{setDirection}!CRYParticle@{CRYParticle}}
+\doxysubsubsection{\texorpdfstring{setDirection()}{setDirection()}}
+{\footnotesize\ttfamily void CRYParticle\+::set\+Direction (\begin{DoxyParamCaption}\item[{double}]{u,  }\item[{double}]{v,  }\item[{double}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{classCRYParticle_ae64fa1e7eeaece7f8d1633542ebcf2d3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCRYParticle_abe703ad692af86f7a3ad6e000cff1938}\label{classCRYParticle_abe703ad692af86f7a3ad6e000cff1938}} 
+\index{CRYParticle@{CRYParticle}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!CRYParticle@{CRYParticle}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void CRYParticle\+::set\+Position (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classCRYParticle_abe703ad692af86f7a3ad6e000cff1938_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCRYParticle_aeb231e45ed2d740ef42422d0f215b8f4}\label{classCRYParticle_aeb231e45ed2d740ef42422d0f215b8f4}} 
+\index{CRYParticle@{CRYParticle}!setTime@{setTime}}
+\index{setTime@{setTime}!CRYParticle@{CRYParticle}}
+\doxysubsubsection{\texorpdfstring{setTime()}{setTime()}}
+{\footnotesize\ttfamily void CRYParticle\+::set\+Time (\begin{DoxyParamCaption}\item[{double}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{classCRYParticle_aeb231e45ed2d740ef42422d0f215b8f4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCRYParticle_ab05442c5cb6392cc4764a456d3129c5f}\label{classCRYParticle_ab05442c5cb6392cc4764a456d3129c5f}} 
+\index{CRYParticle@{CRYParticle}!t@{t}}
+\index{t@{t}!CRYParticle@{CRYParticle}}
+\doxysubsubsection{\texorpdfstring{t()}{t()}}
+{\footnotesize\ttfamily double CRYParticle\+::t (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{classCRYParticle_ab05442c5cb6392cc4764a456d3129c5f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCRYParticle_aa1182298f5f0156c572dbe03ae7b6b0a}\label{classCRYParticle_aa1182298f5f0156c572dbe03ae7b6b0a}} 
+\index{CRYParticle@{CRYParticle}!u@{u}}
+\index{u@{u}!CRYParticle@{CRYParticle}}
+\doxysubsubsection{\texorpdfstring{u()}{u()}}
+{\footnotesize\ttfamily double CRYParticle\+::u (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{classCRYParticle_aa1182298f5f0156c572dbe03ae7b6b0a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCRYParticle_a3539e1f6af48fb038dd14fa8db68c631}\label{classCRYParticle_a3539e1f6af48fb038dd14fa8db68c631}} 
+\index{CRYParticle@{CRYParticle}!v@{v}}
+\index{v@{v}!CRYParticle@{CRYParticle}}
+\doxysubsubsection{\texorpdfstring{v()}{v()}}
+{\footnotesize\ttfamily double CRYParticle\+::v (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{classCRYParticle_a3539e1f6af48fb038dd14fa8db68c631_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCRYParticle_a3b91282714aa734d024f678984de05c8}\label{classCRYParticle_a3b91282714aa734d024f678984de05c8}} 
+\index{CRYParticle@{CRYParticle}!w@{w}}
+\index{w@{w}!CRYParticle@{CRYParticle}}
+\doxysubsubsection{\texorpdfstring{w()}{w()}}
+{\footnotesize\ttfamily double CRYParticle\+::w (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{classCRYParticle_a3b91282714aa734d024f678984de05c8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCRYParticle_adee73b610ddd277a43c91e43919587bb}\label{classCRYParticle_adee73b610ddd277a43c91e43919587bb}} 
+\index{CRYParticle@{CRYParticle}!x@{x}}
+\index{x@{x}!CRYParticle@{CRYParticle}}
+\doxysubsubsection{\texorpdfstring{x()}{x()}}
+{\footnotesize\ttfamily double CRYParticle\+::x (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classCRYParticle_adee73b610ddd277a43c91e43919587bb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCRYParticle_a079ef72b67dc46d8d525cf7cf86d1b5b}\label{classCRYParticle_a079ef72b67dc46d8d525cf7cf86d1b5b}} 
+\index{CRYParticle@{CRYParticle}!y@{y}}
+\index{y@{y}!CRYParticle@{CRYParticle}}
+\doxysubsubsection{\texorpdfstring{y()}{y()}}
+{\footnotesize\ttfamily double CRYParticle\+::y (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classCRYParticle_a079ef72b67dc46d8d525cf7cf86d1b5b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCRYParticle_ab4333735fc0d60bd4ebba5bf4219e93a}\label{classCRYParticle_ab4333735fc0d60bd4ebba5bf4219e93a}} 
+\index{CRYParticle@{CRYParticle}!z@{z}}
+\index{z@{z}!CRYParticle@{CRYParticle}}
+\doxysubsubsection{\texorpdfstring{z()}{z()}}
+{\footnotesize\ttfamily double CRYParticle\+::z (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classCRYParticle_ab4333735fc0d60bd4ebba5bf4219e93a_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classCRYParticle_ac0fabdf3536719f94f336cfc3fed4537}\label{classCRYParticle_ac0fabdf3536719f94f336cfc3fed4537}} 
+\index{CRYParticle@{CRYParticle}!\_charge@{\_charge}}
+\index{\_charge@{\_charge}!CRYParticle@{CRYParticle}}
+\doxysubsubsection{\texorpdfstring{\_charge}{\_charge}}
+{\footnotesize\ttfamily int CRYParticle\+::\+\_\+charge\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCRYParticle_a8f36bc913e1e8ee404e9dc612edc62c6}\label{classCRYParticle_a8f36bc913e1e8ee404e9dc612edc62c6}} 
+\index{CRYParticle@{CRYParticle}!\_id@{\_id}}
+\index{\_id@{\_id}!CRYParticle@{CRYParticle}}
+\doxysubsubsection{\texorpdfstring{\_id}{\_id}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCRYParticle_a074c51316676486a6afd60f9dc30d80c}{CRYId}} CRYParticle\+::\+\_\+id\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCRYParticle_a1102372708f63a8ea6d5a397f964a00e}\label{classCRYParticle_a1102372708f63a8ea6d5a397f964a00e}} 
+\index{CRYParticle@{CRYParticle}!\_KE@{\_KE}}
+\index{\_KE@{\_KE}!CRYParticle@{CRYParticle}}
+\doxysubsubsection{\texorpdfstring{\_KE}{\_KE}}
+{\footnotesize\ttfamily double CRYParticle\+::\+\_\+\+KE\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCRYParticle_aae959185b87e5d28996dca93c03dde21}\label{classCRYParticle_aae959185b87e5d28996dca93c03dde21}} 
+\index{CRYParticle@{CRYParticle}!\_t@{\_t}}
+\index{\_t@{\_t}!CRYParticle@{CRYParticle}}
+\doxysubsubsection{\texorpdfstring{\_t}{\_t}}
+{\footnotesize\ttfamily double CRYParticle\+::\+\_\+t\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCRYParticle_a81f2bc279f9dd382c43a84b6ee138573}\label{classCRYParticle_a81f2bc279f9dd382c43a84b6ee138573}} 
+\index{CRYParticle@{CRYParticle}!\_u@{\_u}}
+\index{\_u@{\_u}!CRYParticle@{CRYParticle}}
+\doxysubsubsection{\texorpdfstring{\_u}{\_u}}
+{\footnotesize\ttfamily double CRYParticle\+::\+\_\+u\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCRYParticle_ac49f9541df53cc380d8ad3939b9d77c1}\label{classCRYParticle_ac49f9541df53cc380d8ad3939b9d77c1}} 
+\index{CRYParticle@{CRYParticle}!\_v@{\_v}}
+\index{\_v@{\_v}!CRYParticle@{CRYParticle}}
+\doxysubsubsection{\texorpdfstring{\_v}{\_v}}
+{\footnotesize\ttfamily double CRYParticle\+::\+\_\+v\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCRYParticle_ab293720ad573e06ce5779687ec1f6d9d}\label{classCRYParticle_ab293720ad573e06ce5779687ec1f6d9d}} 
+\index{CRYParticle@{CRYParticle}!\_w@{\_w}}
+\index{\_w@{\_w}!CRYParticle@{CRYParticle}}
+\doxysubsubsection{\texorpdfstring{\_w}{\_w}}
+{\footnotesize\ttfamily double CRYParticle\+::\+\_\+w\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCRYParticle_ac2e0b090b5ac72bc50adbfb38875df55}\label{classCRYParticle_ac2e0b090b5ac72bc50adbfb38875df55}} 
+\index{CRYParticle@{CRYParticle}!\_x@{\_x}}
+\index{\_x@{\_x}!CRYParticle@{CRYParticle}}
+\doxysubsubsection{\texorpdfstring{\_x}{\_x}}
+{\footnotesize\ttfamily double CRYParticle\+::\+\_\+x\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCRYParticle_ae5161f2d2db181186d629db07c6aeea1}\label{classCRYParticle_ae5161f2d2db181186d629db07c6aeea1}} 
+\index{CRYParticle@{CRYParticle}!\_y@{\_y}}
+\index{\_y@{\_y}!CRYParticle@{CRYParticle}}
+\doxysubsubsection{\texorpdfstring{\_y}{\_y}}
+{\footnotesize\ttfamily double CRYParticle\+::\+\_\+y\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCRYParticle_a4da205ac47fd6d510b24e47297b8adfd}\label{classCRYParticle_a4da205ac47fd6d510b24e47297b8adfd}} 
+\index{CRYParticle@{CRYParticle}!\_z@{\_z}}
+\index{\_z@{\_z}!CRYParticle@{CRYParticle}}
+\doxysubsubsection{\texorpdfstring{\_z}{\_z}}
+{\footnotesize\ttfamily double CRYParticle\+::\+\_\+z\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+source/include/\mbox{\hyperlink{CRYParticle_8h}{CRYParticle.\+h}}\end{DoxyCompactItemize}

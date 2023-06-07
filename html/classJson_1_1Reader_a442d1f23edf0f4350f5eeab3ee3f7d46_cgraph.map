@@ -1,0 +1,9 @@
+<map id="Json::Reader::decodeNumber" name="Json::Reader::decodeNumber">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,216,108"/>
+<area shape="rect" id="node2" href="$classJson_1_1Reader.html#a85597f763fb0148a17359b6dfc6f7326" title=" " alt="" coords="264,5,457,32"/>
+<area shape="rect" id="node3" href="$classJson_1_1Value.html#ac6d858b5fd4d5fe6ca84f697def8c5ea" title=" " alt="" coords="264,56,457,83"/>
+<area shape="rect" id="node4" href="$classJson_1_1Value.html#a6d741407c3d784360c200f181b0d6d64" title=" " alt="" coords="265,107,456,133"/>
+<area shape="rect" id="node5" href="$classJson_1_1Value.html#a5263476047f20e2fc6de470e4de34fe5" title="Swap values but leave comments and source offsets in place." alt="" coords="267,157,454,184"/>
+<area shape="rect" id="node6" href="$namespacestd.html#a22cc6fcbbb1f2f705c7888b615e43582" title="Specialize std::swap() for Json::Value." alt="" coords="505,132,589,159"/>
+<area shape="rect" id="node7" href="$classJson_1_1Value.html#aab841120d78e296e1bc06a373345e822" title="Swap everything." alt="" coords="637,132,772,159"/>
+</map>

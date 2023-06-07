@@ -7,6 +7,7 @@
 #include "PrimaryGeneratorAction.hh"
 #include "RunAction.hh"
 #include "EventAction.hh"
+#include "MySteppingAction.hh"
 
 int main (int argc,char** argv)
 {
@@ -28,6 +29,10 @@ int main (int argc,char** argv)
     theRunManager->SetUserAction(runAction);  // Set the run action
     EventAction* eventAction = new EventAction();  // Create a new event action
     theRunManager->SetUserAction(eventAction);  // Set the event action
+
+    // Register the stepping action
+    MySteppingAction* steppingAction = new MySteppingAction();
+    theRunManager->SetUserAction(steppingAction);
 
     // Create the visualization manager and initialize it
     auto visManager = new G4VisExecutive;

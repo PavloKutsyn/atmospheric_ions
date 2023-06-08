@@ -27,9 +27,14 @@ void MySteppingAction::UserSteppingAction(const G4Step* step)
 void MySteppingAction::PrintCreatedIons()
 {
   std::ofstream csvFile;
-  csvFile.open("created_ions.csv");
+  csvFile.open("created_ions.csv", std::ios::app);
+  if (!csvFile) {
+      std::cerr << "Unable to open file\n";
+  }
 
-  csvFile << "Ion Name,Kinetic Energy,Position X,Position Y,Position Z\n";
+  csvFile <<std::setiosflags(std::ios::fixed)
+          << "PavloKutsyn-trye\n"
+          << "Ion Name,Kinetic Energy,Position X,Position Y,Position Z\n";
 
   for (auto& ion : createdIons) {
     csvFile << ion.name << ",";

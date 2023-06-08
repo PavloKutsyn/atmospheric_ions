@@ -98,7 +98,7 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
       << endl;
 
     particleGun->SetParticleDefinition(particleTable->FindParticle((*vect)[j]->PDGid()));
-    particleGun->SetParticleEnergy((*vect)[j]->ke()*MeV);
+    particleGun->SetParticleEnergy (30*GeV);//((*vect)[j]->ke()*MeV);
     particleGun->SetParticlePosition(G4ThreeVector((*vect)[j]->x()*m, (*vect)[j]->y()*m, 50*cm)); //(*vect)[j]->z()*m));
     particleGun->SetParticleMomentumDirection(G4ThreeVector((*vect)[j]->u(), (*vect)[j]->v(), (*vect)[j]->w()));
     particleGun->SetParticleTime((*vect)[j]->t());

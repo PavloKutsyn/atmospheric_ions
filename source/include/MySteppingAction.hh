@@ -1,17 +1,27 @@
-#ifndef MySteppingAction_h
-#define MySteppingAction_h 1
+#ifndef MySteppingAction_hh
+#define MySteppingAction_hh
 
 #include "G4UserSteppingAction.hh"
 #include "G4Step.hh"
+#include "G4String.hh"
 
-class MySteppingAction : public G4UserSteppingAction {
+struct IonInfo {
+  G4String name;
+  G4double kineticEnergy;
+  G4ThreeVector position;
+};
+
+class MySteppingAction : public G4UserSteppingAction
+{
 public:
-    MySteppingAction();
-    virtual ~MySteppingAction();
+  MySteppingAction();
+  ~MySteppingAction();
 
-    virtual void UserSteppingAction(const G4Step*);
+  void UserSteppingAction(const G4Step* step) override;
+  void PrintCreatedIons();
 
+private:
+  std::vector<IonInfo> createdIons;
 };
 
 #endif
-

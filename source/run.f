@@ -13,4 +13,4 @@
 /CRY/update
 
 # Запускаємо симуляцію
-/run/beamOn 300
+/run/beamOn 1

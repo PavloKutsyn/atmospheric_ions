@@ -9,8 +9,8 @@
 /CRY/input date 1-24-2017
 /CRY/input latitude 59.24
 /CRY/input altitude 0
-/CRY/input subboxLength 4
+/CRY/input subboxLength 1
 /CRY/update
 
 # Запускаємо симуляцію
-/run/beamOn 1
+/run/beamOn 100000

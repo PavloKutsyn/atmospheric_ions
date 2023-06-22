@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 6.0.2, 2023-06-08T01:16:17. -->
+<!-- Written by QtCreator 6.0.2, 2023-06-21T18:15:15. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -166,11 +166,13 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">execute</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.execute</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">execute</value>
+    <value type="QString" key="RunConfiguration.Arguments">run.f</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseTerminal">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/pavlo/Worc_space/atm_ions/build</value>
    </valuemap>
    <value type="int" key="ProjectExplorer.Target.RunConfigurationCount">1</value>

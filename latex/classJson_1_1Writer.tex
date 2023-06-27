@@ -1,0 +1,73 @@
+\hypertarget{classJson_1_1Writer}{}\doxysection{Json\+::Writer Class Reference}
+\label{classJson_1_1Writer}\index{Json::Writer@{Json::Writer}}
+
+
+Abstract class for writers.  
+
+
+
+
+{\ttfamily \#include $<$json.\+h$>$}
+
+
+
+Inheritance diagram for Json\+::Writer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJson_1_1Writer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Json\+::Writer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{classJson_1_1Writer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classJson_1_1Writer_a3e618564336f26b14921f0d840db668c}{$\sim$\+Writer}} ()
+\item 
+virtual std\+::string \mbox{\hyperlink{classJson_1_1Writer_a7b2273a4ffd6f32b369ac8a53b7b5a0d}{write}} (const \mbox{\hyperlink{classJson_1_1Value}{Value}} \&root)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class for writers. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000007}{Deprecated}}]Use \mbox{\hyperlink{classJson_1_1StreamWriter}{Stream\+Writer}}. (And really, this is an implementation detail.) \end{DoxyRefDesc}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classJson_1_1Writer_a3e618564336f26b14921f0d840db668c}\label{classJson_1_1Writer_a3e618564336f26b14921f0d840db668c}} 
+\index{Json::Writer@{Json::Writer}!````~Writer@{$\sim$Writer}}
+\index{````~Writer@{$\sim$Writer}!Json::Writer@{Json::Writer}}
+\doxysubsubsection{\texorpdfstring{$\sim$Writer()}{~Writer()}}
+{\footnotesize\ttfamily Json\+::\+Writer\+::$\sim$\+Writer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classJson_1_1Writer_a7b2273a4ffd6f32b369ac8a53b7b5a0d}\label{classJson_1_1Writer_a7b2273a4ffd6f32b369ac8a53b7b5a0d}} 
+\index{Json::Writer@{Json::Writer}!write@{write}}
+\index{write@{write}!Json::Writer@{Json::Writer}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily virtual std\+::string Json\+::\+Writer\+::write (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classJson_1_1Value}{Value}} \&}]{root }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classJson_1_1StyledWriter_a56f0fd80f60272b3f3c85690aae66e7d}{Json\+::\+Styled\+Writer}}, and \mbox{\hyperlink{classJson_1_1FastWriter_aa66218a56447222f91d64db618935a19}{Json\+::\+Fast\+Writer}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sourse/include/json/\mbox{\hyperlink{json_8h}{json.\+h}}\item 
+sourse/src/\mbox{\hyperlink{jsoncpp_8cpp}{jsoncpp.\+cpp}}\end{DoxyCompactItemize}

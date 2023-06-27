@@ -1,3 +1,5 @@
 # Ignore all build directories
 **/build/*
+**/docs/*
 
+**/Doxyfile*

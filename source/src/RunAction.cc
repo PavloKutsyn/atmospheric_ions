@@ -1,21 +1,31 @@
-#include "RunAction.hh"
-#include "G4Run.hh"
-#include "G4SystemOfUnits.hh"
-#include "G4UnitsTable.hh"
+#include "RunAction.hh"  // Include the RunAction header file
+#include "G4Run.hh"      // Include the Geant4 Run header file
+#include "G4SystemOfUnits.hh"  // Include the Geant4 system of units header file
+#include "G4UnitsTable.hh"     // Include the Geant4 units table header file
 
-RunAction::RunAction() : G4UserRunAction(),
-                         fTotalIonization(0.)
+// Constructor for the RunAction class
+// It takes a pointer to an object of MySteppingAction as input
+// This constructor initializes the base G4UserRunAction class, and the private data members fTotalIonization and fSteppingAction
+RunAction::RunAction(MySteppingAction* steppingAction)
+    : G4UserRunAction(),
+    fTotalIonization(0.),
+    fSteppingAction(steppingAction) // initialize the new member variable
 {}
 
+// Destructor for the RunAction class
 RunAction::~RunAction()
 {}
 
+// This method is called at the beginning of each run
+// It resets the total ionization to zero
 void RunAction::BeginOfRunAction(const G4Run*)
 {
     // Reset total ionization
     fTotalIonization = 0.;
 }
 
+// This method is called at the end of each run
+// It prints the total ionization of the run
 void RunAction::EndOfRunAction(const G4Run*)
 {
     // Print total ionization
@@ -23,24 +33,3 @@ void RunAction::EndOfRunAction(const G4Run*)
            << G4BestUnit(fTotalIonization, "Energy")
            << G4endl;
 }
-
-/*In this file we reset the total ionization to zero
-  * at the beginning of each run, and then print
-  * total ionization at the end of each run.
-
-Note: do not update fTotalIonization during runtime.
-You need an additional class like SteppingAction,
-to track particle steps and update total ionization.
-
-This RunAction class tracks and prints the total ionization energy.
-At the start of each run, it resets fTotalIonization to zero.
-At the end of each run, it prints fTotalIonization in
-the most appropriate energy units.
-
-This current implementation only sets and prints fTotalIonization,
-but doesn't update it during the run. Typically,
-the updating could be done in SteppingAction based on the energy
-deposits in each step, or in EventAction based on the total energy
-deposits in each event, and you'll need to provide a public method
-in RunAction to add to fTotalIonization.
-*/

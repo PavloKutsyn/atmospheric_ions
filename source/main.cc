@@ -8,6 +8,7 @@
 #include "RunAction.hh"                // Include the run action header
 #include "EventAction.hh"              // Include the event action header
 #include "MySteppingAction.hh"         // Include the stepping action header
+#include "CsvWriter.hh"
 #include <chrono>                      // Include the standard chrono library for handling time
 
 int main (int argc,char** argv)
@@ -38,8 +39,13 @@ int main (int argc,char** argv)
     theRunManager->SetUserAction(new PrimaryGeneratorAction("")); // Set the primary particle generation
     theRunManager->Initialize(); // Initialize the run manager
 
-    // Register the stepping action
-    MySteppingAction* steppingAction = new MySteppingAction();
+
+    // Create the CsvWriter objects
+    CsvWriter* ionWriter = new CsvWriter("created_ions.csv");
+    CsvWriter* particleWriter = new CsvWriter("generated_particles.csv");
+
+    // Create the MySteppingAction object
+    MySteppingAction* steppingAction = new MySteppingAction(ionWriter, particleWriter);
 
     // Create a new run action and event action
     RunAction* runAction = new RunAction(steppingAction); // Create a new run action
@@ -70,5 +76,8 @@ int main (int argc,char** argv)
     delete visManager; // Delete the visualization manager
     delete theRunManager; // Delete the run manager
     delete steppingAction; // Delete the stepping action pointer
+    delete ionWriter;
+    delete particleWriter;
+
     return 0;
 }

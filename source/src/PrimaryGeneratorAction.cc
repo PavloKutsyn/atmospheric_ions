@@ -115,7 +115,7 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 
     // Set the particle definition, energy, position, momentum direction, and time in the particle gun.
     particleGun->SetParticleDefinition(particleTable->FindParticle((*vect)[j]->PDGid()));
-    particleGun->SetParticleEnergy ((*vect)[j]->ke()*MeV);
+    particleGun->SetParticleEnergy ((*vect)[j]->ke()*keV);
     particleGun->SetParticlePosition(G4ThreeVector((*vect)[j]->x()*m, (*vect)[j]->y()*m, 50*cm));
     particleGun->SetParticleMomentumDirection(G4ThreeVector((*vect)[j]->u(), (*vect)[j]->v(), (*vect)[j]->w()));
     particleGun->SetParticleTime((*vect)[j]->t());

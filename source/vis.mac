@@ -9,7 +9,7 @@
 /CRY/input date 1-24-2017
 /CRY/input latitude 59.24
 /CRY/input altitude 0
-/CRY/input subboxLength 1
+/CRY/input subboxLength 0.035
 /CRY/update
 ##### Visualization SETUPS #####
 /vis/drawVolume
@@ -36,7 +36,7 @@
 /vis/ogl/set/displayListLimit 1000000
 /vis/viewer/set/autoRefresh true
 /vis/verbose warnings
-/vis/scene/add/axes 0 0 0 3 m
+/vis/scene/add/axes 0 0 0 0.3 m
 
 ###### NUMBER OF EVENTS ######
 /run/beamOn 100
